@@ -1,7 +1,8 @@
 <html>
-<head><title>Mierdahorario de la FI</title></head>
+    <meta charset="utf-8">
+    <head><title>Mierdahorario de la FI</title></head>
 <style>
-	#cal, #controls, #footer { min-width: 520px; width: 90%; margin: 0 auto; margin-top: 30px; }
+	#cal, #extras, #controls, #footer { min-width: 520px; width: 90%; margin: 0 auto; margin-top: 30px; }
 	@media all and ( max-width: 1000px ) {
 		body { font-size: 65%; }
 	}
@@ -17,409 +18,555 @@
 	#calheader>div, #calgrid>div { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;display: inline-block; width: 8.333%; height: 35px; border: 1px solid black; text-align: center; }
 	#calheader { height: 35px; overflow: hidden; }
 	#calgrid>div { position: absolute; }
+    #extras > * { display: inline-block; }
+    #tools { float: right; }
 	#controls>label { padding: 2px; margin: 4px 25px 4px 4px; }
 </style>
+     <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+     <script language="JavaScript" type="text/javascript" src="html2canvas.js"></script>
 <script>
 	var cursos = {
 		"1M" : {
 			"color": "rgba(255, 0, 0, 0.3)",
-			"MD1": {"name": "Matem�tica discreta 1", "hours":
+			"MD1": {"name": "Matemática discreta 1", "hours":
 				[{"duration": 2, "start": 1, "day": 1},
 				{"duration": 2, "start": 3, "day": 5},
-				{"duration": 1, "start": 5, "day": 4}]},
-			"FFyTI": {"name": "Fundamentos F�sicos", "hours":
+				{"duration": 1, "start": 5, "day": 4}], "ects": 6},
+			"FFyTI": {"name": "Fundamentos Físicos", "hours":
 				[{"duration": 2, "start": 3, "day": 1},
 				{"duration": 1, "start": 5, "day": 3},
-				{"duration": 2, "start": 1, "day": 5}]},
-			"AL": {"name": "�lgebra Lineal", "hours":
+				{"duration": 2, "start": 1, "day": 5}], 
+                   "ects": 6},
+			"AL": {"name": "Álgebra Lineal", "hours":
 				[{"duration": 2, "start": 1, "day": 2},
-				{"duration": 2, "start": 3, "day": 3}]},
-			"Log": {"name": "L�gica", "hours":
+				{"duration": 2, "start": 3, "day": 3}], 
+                   "ects": 6},
+			"Log": {"name": "Lógica", "hours":
 				[{"duration": 2, "start": 3, "day": 2},
-				{"duration": 2, "start": 1, "day": 4}]},
-			"Prog": {"name": "Programaci�n I", "hours":
+				{"duration": 2, "start": 1, "day": 4}], 
+                   "ects": 6},
+			"Prog": {"name": "Programación I", "hours":
 				[{"duration": 2, "start": 1, "day": 3},
-				{"duration": 2, "start": 3, "day": 4}]}
+				{"duration": 2, "start": 3, "day": 4}], 
+                   "ects": 6}
 		},
 		"2M" : {
 			"color": "rgba(255, 60, 0, 0.3)",
-			"MD1": {"name": "Matem�tica discreta 1", "hours":
+			"MD1": {"name": "Matemática discreta 1", "hours":
 				[{"duration": 2, "start": 3, "day": 1},
 				{"duration": 2, "start": 1, "day": 2},
-				{"duration": 1, "start": 5, "day": 3}]},
-			"FFyTI": {"name": "Fundamentos F�sicos", "hours":
+				{"duration": 1, "start": 5, "day": 3}], 
+                   "ects": 6},
+			"FFyTI": {"name": "Fundamentos Físicos", "hours":
 				[{"duration": 2, "start": 1, "day": 1},
 				{"duration": 2, "start": 3, "day": 2},
-				{"duration": 1, "start": 5, "day": 4}]},
-			"AL": {"name": "�lgebra Lineal", "hours":
+				{"duration": 1, "start": 5, "day": 4}], 
+                   "ects": 6},
+			"AL": {"name": "Álgebra Lineal", "hours":
 				[{"duration": 2, "start": 1, "day": 3},
-				{"duration": 2, "start": 3, "day": 4}]},
-			"Log": {"name": "L�gica", "hours":
+				{"duration": 2, "start": 3, "day": 4}], 
+                   "ects": 6},
+			"Log": {"name": "Lógica", "hours":
 				[{"duration": 2, "start": 3, "day": 3},
-				{"duration": 2, "start": 1, "day": 5}]},
-			"Prog": {"name": "Programaci�n I", "hours":
+				{"duration": 2, "start": 1, "day": 5}], 
+                   "ects": 6},
+			"Prog": {"name": "Programación I", "hours":
 				[{"duration": 2, "start": 1, "day": 4},
-				{"duration": 2, "start": 3, "day": 5}]}
+				{"duration": 2, "start": 3, "day": 5}], 
+                   "ects": 6}
 		},
 		"3M" : {
 			"color": "rgba(255, 120, 0, 0.3)",
-			"MD1": {"name": "Matem�tica discreta 1", "hours":
+			"MD1": {"name": "Matemática discreta 1", "hours":
 				[{"duration": 2, "start": 3, "day": 2},
 				{"duration": 2, "start": 1, "day": 3},
-				{"duration": 1, "start": 5, "day": 5}]},
-			"FFyTI": {"name": "Fundamentos F�sicos", "hours":
+				{"duration": 1, "start": 5, "day": 5}], 
+                   "ects": 6},
+			"FFyTI": {"name": "Fundamentos Físicos", "hours":
 				[{"duration": 2, "start": 1, "day": 2},
 				{"duration": 2, "start": 3, "day": 3},
-				{"duration": 1, "start": 5, "day": 4}]},
-			"AL": {"name": "�lgebra Lineal", "hours":
+				{"duration": 1, "start": 5, "day": 4}], 
+                   "ects": 6},
+			"AL": {"name": "Álgebra Lineal", "hours":
 				[{"duration": 2, "start": 1, "day": 4},
-				{"duration": 2, "start": 3, "day": 5}]},
-			"Log": {"name": "L�gica", "hours":
+				{"duration": 2, "start": 3, "day": 5}], 
+                   "ects": 6},
+			"Log": {"name": "Lógica", "hours":
 				[{"duration": 2, "start": 1, "day": 1},
-				{"duration": 2, "start": 3, "day": 4}]},
-			"Prog": {"name": "Programaci�n I", "hours":
+				{"duration": 2, "start": 3, "day": 4}], 
+                   "ects": 6},
+			"Prog": {"name": "Programación I", "hours":
 				[{"duration": 2, "start": 3, "day": 1},
-				{"duration": 2, "start": 1, "day": 5}]}
+				{"duration": 2, "start": 1, "day": 5}], 
+                   "ects": 6}
 		},
 		"4M" : {
 			"color": "rgba(255, 180, 0, 0.3)",
-			"MD1": {"name": "Matem�tica discreta 1", "hours":
+			"MD1": {"name": "Matemática discreta 1", "hours":
 				[{"duration": 1, "start": 5, "day": 3},
 				{"duration": 2, "start": 3, "day": 4},
-				{"duration": 2, "start": 1, "day": 5}]},
-			"FFyTI": {"name": "Fundamentos F�sicos", "hours":
+				{"duration": 2, "start": 1, "day": 5}], 
+                   "ects": 6},
+			"FFyTI": {"name": "Fundamentos Físicos", "hours":
 				[{"duration": 1, "start": 5, "day": 2},
 				{"duration": 2, "start": 1, "day": 4},
-				{"duration": 2, "start": 3, "day": 5}]},
-			"AL": {"name": "�lgebra Lineal", "hours":
+				{"duration": 2, "start": 3, "day": 5}], 
+                   "ects": 6},
+			"AL": {"name": "Álgebra Lineal", "hours":
 				[{"duration": 2, "start": 1, "day": 1},
-				{"duration": 2, "start": 3, "day": 2}]},
-			"Log": {"name": "L�gica", "hours":
+				{"duration": 2, "start": 3, "day": 2}], 
+                   "ects": 6},
+			"Log": {"name": "Lógica", "hours":
 				[{"duration": 2, "start": 3, "day": 1},
-				{"duration": 2, "start": 1, "day": 3}]},
-			"Prog": {"name": "Programaci�n I", "hours":
+				{"duration": 2, "start": 1, "day": 3}], 
+                   "ects": 6},
+			"Prog": {"name": "Programación I", "hours":
 				[{"duration": 2, "start": 1, "day": 2},
-				{"duration": 2, "start": 3, "day": 3}]}
+				{"duration": 2, "start": 3, "day": 3}], 
+                   "ects": 6}
 		},
 		"5T" : {
 			"color": "rgba(255, 240, 0, 0.3)",
-			"MD1": {"name": "Matem�tica discreta 1", "hours":
+			"MD1": {"name": "Matemática discreta 1", "hours":
 				[{"duration": 2, "start": 8, "day": 1},
 				{"duration": 1, "start": 7, "day": 2},
-				{"duration": 2, "start": 9, "day": 4}]},
-			"FFyTI": {"name": "Fundamentos F�sicos", "hours":
+				{"duration": 2, "start": 9, "day": 4}], 
+                   "ects": 6},
+			"FFyTI": {"name": "Fundamentos Físicos", "hours":
 				[{"duration": 2, "start": 10, "day": 1},
 				{"duration": 1, "start": 11, "day": 3},
-				{"duration": 2, "start": 7, "day": 4}]},
-			"AL": {"name": "�lgebra Lineal", "hours":
+				{"duration": 2, "start": 7, "day": 4}], 
+                   "ects": 6},
+			"AL": {"name": "Álgebra Lineal", "hours":
 				[{"duration": 2, "start": 10, "day": 2},
-				{"duration": 2, "start": 7, "day": 5}]},
-			"Log": {"name": "L�gica", "hours":
+				{"duration": 2, "start": 7, "day": 5}], 
+                   "ects": 6},
+			"Log": {"name": "Lógica", "hours":
 				[{"duration": 2, "start": 7, "day": 3},
 				{"duration": 2, "start": 9, "day": 5}]},
-			"Prog": {"name": "Programaci�n I", "hours":
+			"Prog": {"name": "Programación I", "hours":
 				[{"duration": 2, "start": 8, "day": 2},
-				{"duration": 2, "start": 9, "day": 3}]}
+				{"duration": 2, "start": 9, "day": 3}], 
+                   "ects": 6}
 		},
 		"3S1M" : {
 			"color": "rgba(180, 255, 0, 0.3)",
 			"AED": {"name": "Algoritmos y Estructuras de Datos", "hours":
 				[{"duration": 2, "start": 1, "day": 1},
-				{"duration": 2, "start": 5, "day": 5}]},
-			"MD2": {"name": "Matem�tica Discreta 2", "hours":
-				[{"duration": 2, "start": 3, "day": 1}]},
-			"AlgNum": {"name": "Algor�tmica Num�rica", "hours":
+				{"duration": 2, "start": 5, "day": 5}], 
+                   "ects": 6},
+			"MD2": {"name": "Matemática Discreta 2", "hours":
+				[{"duration": 2, "start": 3, "day": 1}], 
+                   "ects": 3},
+			"AlgNum": {"name": "Algorítmica Numérica", "hours":
 				[{"duration": 2, "start": 3, "day": 3},
-				{"duration": 2, "start": 1, "day": 4}]},
+				{"duration": 2, "start": 1, "day": 4}], 
+                   "ects": 6},
 			"LenF": {"name": "Lenguajes Formales", "hours":
 				[{"duration": 2, "start": 1, "day": 2},
-				{"duration": 1, "start": 5, "day": 3}]},
+				{"duration": 1, "start": 5, "day": 3}], 
+                   "ects": 6},
 			"Estruc": {"name": "Estructura de Computadores", "hours":
 				[{"duration": 2, "start": 3, "day": 2},
-				{"duration": 2, "start": 1, "day": 3}]},
-			"PPS": {"name": "Programaci�n para Sistemas", "hours":
-				[{"duration": 2, "start": 3, "day": 4}]}
+				{"duration": 2, "start": 1, "day": 3}], 
+                   "ects": 6},
+			"PPS": {"name": "Programación para Sistemas", "hours":
+				[{"duration": 2, "start": 3, "day": 4}], 
+                   "ects": 3}
 		},
 		"3S2M" : {
 			"color": "rgba(120, 255, 0, 0.3)",
 			"AED": {"name": "Algoritmos y Estructuras de Datos", "hours":
 				[{"duration": 2, "start": 3, "day": 2},
-				{"duration": 2, "start": 5, "day": 5}]},
-			"MD2": {"name": "Matem�tica Discreta 2", "hours":
-				[{"duration": 2, "start": 3, "day": 4}]},
-			"AlgNum": {"name": "Algor�tmica Num�rica", "hours":
+				{"duration": 2, "start": 5, "day": 5}], 
+                   "ects": 6},
+			"MD2": {"name": "Matemática Discreta 2", "hours":
+				[{"duration": 2, "start": 3, "day": 4}], 
+                   "ects": 3},
+			"AlgNum": {"name": "Algorítmica Numérica", "hours":
 				[{"duration": 2, "start": 1, "day": 2},
-				{"duration": 2, "start": 1, "day": 3}]},
+				{"duration": 2, "start": 1, "day": 3}], 
+                   "ects": 6},
 			"LenF": {"name": "Lenguajes Formales", "hours":
 				[{"duration": 1, "start": 2, "day": 1},
-				{"duration": 2, "start": 3, "day": 3}]},
+				{"duration": 2, "start": 3, "day": 3}], 
+                   "ects": 6},
 			"Estruc": {"name": "Estructura de Computadores", "hours":
 				[{"duration": 2, "start": 3, "day": 1},
-				{"duration": 2, "start": 1, "day": 4}]},
-			"PPS": {"name": "Programaci�n para Sistemas", "hours":
-				[{"duration": 2, "start": 3, "day": 5}]}
+				{"duration": 2, "start": 1, "day": 4}], 
+                   "ects": 6},
+			"PPS": {"name": "Programación para Sistemas", "hours":
+				[{"duration": 2, "start": 3, "day": 5}], 
+                   "ects": 3}
 		},
 		"3S3T" : {
 			"color": "rgba(60, 255, 0, 0.3)",
 			"AED": {"name": "Algoritmos y Estructuras de Datos", "hours":
 				[{"duration": 2, "start": 8, "day": 2},
-				{"duration": 2, "start": 7, "day": 5}]},
-			"MD2": {"name": "Matem�tica Discreta 2", "hours":
-				[{"duration": 2, "start": 7, "day": 1}]},
-			"AlgNum": {"name": "Algor�tmica Num�rica", "hours":
+				{"duration": 2, "start": 7, "day": 5}], 
+                   "ects": 6},
+			"MD2": {"name": "Matemática Discreta 2", "hours":
+				[{"duration": 2, "start": 7, "day": 1}], 
+                   "ects": 3},
+			"AlgNum": {"name": "Algorítmica Numérica", "hours":
 				[{"duration": 2, "start": 7, "day": 3},
-				{"duration": 2, "start": 9, "day": 5}]},
+				{"duration": 2, "start": 9, "day": 5}], 
+                   "ects": 6},
 			"LenF": {"name": "Lenguajes Formales", "hours":
 				[{"duration": 1, "start": 10, "day": 2},
-				{"duration": 2, "start": 9, "day": 3}]},
+				{"duration": 2, "start": 9, "day": 3}], 
+                   "ects": 6},
 			"Estruc": {"name": "Estructura de Computadores", "hours":
 				[{"duration": 2, "start": 9, "day": 1},
-				{"duration": 2, "start": 8, "day": 4}]},
-			"PPS": {"name": "Programaci�n para Sistemas", "hours":
-				[{"duration": 2, "start": 10, "day": 4}]}
+				{"duration": 2, "start": 8, "day": 4}], 
+                   "ects": 6},
+			"PPS": {"name": "Programación para Sistemas", "hours":
+				[{"duration": 2, "start": 10, "day": 4}], 
+                   "ects": 3}
 		},
 		"4S1M" : {
 			"color": "rgba(0, 255, 0, 0.3)",
 			"SO": {"name": "Sistemas Operativos", "hours":
 				[{"duration": 2, "start": 3, "day": 2},
-				{"duration": 2, "start": 1, "day": 5}]}
+				{"duration": 2, "start": 1, "day": 5}], 
+                   "ects": 6}
 		},
 		"4S2M" : {
 			"color": "rgba(0, 255, 60, 0.3)",
 			"SO": {"name": "Sistemas Operativos", "hours":
 				[{"duration": 2, "start": 1, "day": 2},
-				{"duration": 2, "start": 3, "day": 3}]}
+				{"duration": 2, "start": 3, "day": 3}], 
+                   "ects": 6}
 		},
 		"4S3T" : {
 			"color": "rgba(0, 255, 120, 0.3)",
 			"SO": {"name": "Sistemas Operativos", "hours":
 				[{"duration": 2, "start": 11, "day": 1},
-				{"duration": 2, "start": 9, "day": 4}]},
+				{"duration": 2, "start": 9, "day": 4}], 
+                   "ects": 6},
 			"Redes": {"name": "Redes de Computadores", "hours":
 				[{"duration": 2, "start": 7, "day": 1},
-				{"duration": 2, "start": 8, "day": 3}]},
-			"PyE2": {"name": "Probabilidades y Estad�stica 2", "hours":
-				[{"duration": 2, "start": 7, "day": 2}]}
+				{"duration": 2, "start": 8, "day": 3}], 
+                   "ects": 6},
+			"PyE2": {"name": "Probabilidades y Estadística 2", "hours":
+				[{"duration": 2, "start": 7, "day": 2}], 
+                   "ects": 3}
 		},
 		"5S1M" : {
 			"color": "rgba(0, 255, 180, 0.3)",
 			"IA": {"name": "Inteligencia Artificial", "hours":
 				[{"duration": 2, "start": 1, "day": 1},
-				{"duration": 2, "start": 3, "day": 4}]},
-			"IPO": {"name": "Interacci�n Persona-Ordenador", "hours":
+				{"duration": 2, "start": 3, "day": 4}], 
+                   "ects": 6},
+			"IPO": {"name": "Interacción Persona-Ordenador", "hours":
 				[{"duration": 2, "start": 1, "day": 2},
-				{"duration": 2, "start": 3, "day": 3}]},
+				{"duration": 2, "start": 3, "day": 3}], 
+                   "ects": 6},
 			"SO": {"name": "Sistemas Operativos", "hours":
 				[{"duration": 2, "start": 3, "day": 2},
-				{"duration": 2, "start": 1, "day": 5}]},
+				{"duration": 2, "start": 1, "day": 5}], 
+                   "ects": 6},
 			"Seg": {"name": "Seguridad en las TI", "hours":
 				[{"duration": 2, "start": 1, "day": 3},
-				{"duration": 2, "start": 3, "day": 5}]},
+				{"duration": 2, "start": 3, "day": 5}], 
+                   "ects": 6},
 			"PDL": {"name": "Procesadores de Lenguajes", "hours":
-				[{"duration": 2, "start": 1, "day": 4}]}
+				[{"duration": 2, "start": 1, "day": 4}], 
+                   "ects": 3}
 		},
 		"5S2M" : {
 			"color": "rgba(0, 255, 255, 0.3)",
 			"IA": {"name": "Inteligencia Artificial", "hours":
 				[{"duration": 2, "start": 1, "day": 3},
-				{"duration": 2, "start": 1, "day": 4}]},
-			"IPO": {"name": "Interacci�n Persona-Ordenador", "hours":
+				{"duration": 2, "start": 1, "day": 4}], 
+                   "ects": 6},
+			"IPO": {"name": "Interacción Persona-Ordenador", "hours":
 				[{"duration": 2, "start": 1, "day": 2},
-				{"duration": 2, "start": 3, "day": 3}]},
+				{"duration": 2, "start": 3, "day": 3}], 
+                   "ects": 6},
 			"SO": {"name": "Sistemas Operativos", "hours":
 				[{"duration": 2, "start": 1, "day": 2},
-				{"duration": 2, "start": 3, "day": 3}]},
+				{"duration": 2, "start": 3, "day": 3}], 
+                   "ects": 6},
 			"Seg": {"name": "Seguridad en las TI", "hours":
 				[{"duration": 2, "start": 1, "day": 1},
-				{"duration": 2, "start": 1, "day": 5}]},
+				{"duration": 2, "start": 1, "day": 5}], 
+                   "ects": 6},
 			"PDL": {"name": "Procesadores de Lenguajes", "hours":
-				[{"duration": 2, "start": 3, "day": 4}]}
+				[{"duration": 2, "start": 3, "day": 4}], 
+                   "ects": 3}
 		},
 		"5S3T" : {
 			"color": "rgba(60, 255, 255, 0.3)",
 			"IA": {"name": "Inteligencia Artificial", "hours":
 				[{"duration": 2, "start": 9, "day": 2},
-				{"duration": 2, "start": 9, "day": 3}]},
-			"IPO": {"name": "Interacci�n Persona-Ordenador", "hours":
+				{"duration": 2, "start": 9, "day": 3}], 
+                   "ects": 6},
+			"IPO": {"name": "Interacción Persona-Ordenador", "hours":
 				[{"duration": 2, "start": 11, "day": 1},
-				{"duration": 2, "start": 9, "day": 4}]},
+				{"duration": 2, "start": 9, "day": 4}], 
+                   "ects": 6},
 			"SO": {"name": "Sistemas Operativos", "hours":
 				[{"duration": 2, "start": 11, "day": 1},
-				{"duration": 2, "start": 9, "day": 4}]},
+				{"duration": 2, "start": 9, "day": 4}], 
+                   "ects": 6},
 			"Seg": {"name": "Seguridad en las TI", "hours":
 				[{"duration": 2, "start": 9, "day": 1},
-				{"duration": 2, "start": 9, "day": 5}]},
+				{"duration": 2, "start": 9, "day": 5}], 
+                   "ects": 6},
 			"PDL": {"name": "Procesadores de Lenguajes", "hours":
-				[{"duration": 2, "start": 11, "day": 3}]}
+				[{"duration": 2, "start": 11, "day": 3}], 
+                   "ects": 3}
 		},
 		"OPT3" : {
 			"color": "rgba(120, 255, 255, 0.3)",
-			"SisOpt": {"name": "Sistemas Optoelectr�nicos", "hours":
-				[{"duration": 2, "start": 3, "day": 1}]},
-			"ApNum": {"name": "Aplicaciones Num�ricas", "hours":
-				[{"duration": 2, "start": 3, "day": 1}]},
-			"IOp": {"name": "Investigaci�n Operativa", "hours":
+			"SisOpt": {"name": "Sistemas Optoelectrónicos", "hours":
+				[{"duration": 2, "start": 3, "day": 1}], 
+                   "ects": 3},
+			"ApNum": {"name": "Aplicaciones Numéricas", "hours":
+				[{"duration": 2, "start": 3, "day": 1}], 
+                   "ects": 3},
+			"IOp": {"name": "Investigación Operativa", "hours":
 				[{"duration": 2, "start": 7, "day": 1},
-				{"duration": 2, "start": 7, "day": 4}]},
-			"InfInd": {"name": "Inform�tica Industrial", "hours":
+				{"duration": 2, "start": 7, "day": 4}], 
+                   "ects": 6},
+			"InfInd": {"name": "Informática Industrial", "hours":
 				[{"duration": 2, "start": 7, "day": 1},
-				{"duration": 2, "start": 7, "day": 5}]},
+				{"duration": 2, "start": 7, "day": 5}], 
+                   "ects": 6},
 			"EcDif": {"name": "Ecuaciones Diferenciales", "hours":
 				[{"duration": 2, "start": 7, "day": 1},
-				{"duration": 2, "start": 7, "day": 4}]},
+				{"duration": 2, "start": 7, "day": 4}], 
+                   "ects": 6},
 			"Mid": {"name": "Middleware", "hours":
-				[{"duration": 2, "start": 7, "day": 2}]}
+				[{"duration": 2, "start": 7, "day": 2}], 
+                   "ects": 3}
 		},
 		"6S1T" : {
 			"color": "rgba(180, 255, 255, 0.3)",
-			"ProLog": {"name": "Programaci�n Declarativa", "hours":
-				[{"duration": 2, "start": 8, "day": 3}]}
+			"ProLog": {"name": "Programación Declarativa", "hours":
+				[{"duration": 2, "start": 8, "day": 3}], 
+                   "ects": 3}
 		},
 		"7S1T" : {
 			"color": "rgba(255, 225, 255, 0.3)",
-			"IS2": {"name": "Ingenier�a del Software 2", "hours":
+			"IS2": {"name": "Ingeniería del Software 2", "hours":
 				[{"duration": 2, "start": 7, "day": 1},
-				{"duration": 1, "start": 7, "day": 3}]},
-			"Ing": {"name": "Ingl�s", "hours":
+				{"duration": 1, "start": 7, "day": 3}], 
+                   "ects": 6},
+			"Ing": {"name": "Inglés", "hours":
 				[{"duration": 2, "start": 7, "day": 2},
-				{"duration": 2, "start": 7, "day": 4}]},
+				{"duration": 2, "start": 7, "day": 4}], 
+                   "ects": 6},
 			"GPTI": {"name": "GPTI", "hours":
 				[{"duration": 1, "start": 8, "day": 3},
-				{"duration": 2, "start": 7, "day": 5}]},
+				{"duration": 2, "start": 7, "day": 5}], 
+                   "ects": 6},
 			"CISCO": {"name": "Cisco: CCNA", "hours":
 				[{"duration": 2, "start": 4, "day": 2},
-				{"duration": 2, "start": 4, "day": 5}]},
-			"SisPlan": {"name": "Sistemas de Planificaci�n", "hours":
-				[{"duration": 2, "start": 4, "day": 1}]},
-			"TecInal": {"name": "Tecnolog�as de Comunicaci�n Inal�mbrica", "hours":
-				[{"duration": 2, "start": 4, "day": 3}]},
+				{"duration": 2, "start": 4, "day": 5}], 
+                   "ects": 6},
+			"SisPlan": {"name": "Sistemas de Planificación", "hours":
+				[{"duration": 2, "start": 4, "day": 1}], 
+                   "ects": 3},
+			"TecInal": {"name": "Tecnologías de Comunicación Inalámbrica", "hours":
+				[{"duration": 2, "start": 4, "day": 3}], 
+                   "ects": 3},
 			"RecFor": {"name": "Reconocimiento de Formas", "hours":
-				[{"duration": 2, "start": 4, "day": 4}]},
-			"AdSis": {"name": "Administraci�n de Sistemas", "hours":
-				[{"duration": 2, "start": 9, "day": 1}]},
-			"Nano": {"name": "Nanotecnolog�a", "hours":
-				[{"duration": 2, "start": 9, "day": 2}]},
-			"Linked": {"name": "Web Sem�ntica y Linked Data", "hours":
-				[{"duration": 2, "start": 9, "day": 3}]},
-			"CompCient": {"name": "T�cnicas de Computaci�n Cient�fica", "hours":
-				[{"duration": 2, "start": 9, "day": 4}]}
+				[{"duration": 2, "start": 4, "day": 4}], 
+                   "ects": 3},
+			"AdSis": {"name": "Administración de Sistemas", "hours":
+				[{"duration": 2, "start": 9, "day": 1}], 
+                   "ects": 3},
+			"Nano": {"name": "Nanotecnología", "hours":
+				[{"duration": 2, "start": 9, "day": 2}], 
+                   "ects": 3},
+			"Linked": {"name": "Web Semántica y Linked Data", "hours":
+				[{"duration": 2, "start": 9, "day": 3}], 
+                   "ects": 3},
+			"CompCient": {"name": "Técnicas de Computación Científica", "hours":
+				[{"duration": 2, "start": 9, "day": 4}], 
+                   "ects": 3}
 		}
 	}
 	
-	function toggleAsignatura(event){
-		var curso = event.value;
-		var asignatura = event.name;
-		if(event.checked) {
-			showBlock(curso, asignatura);
-		} else {
-			hideBlock(curso, asignatura);
+var numcredits = 0;
+var nasignaturas = 0;
+function toggleAsignatura(event){
+    var curso = event.value;
+    var asignatura = event.name;
+    if(event.checked) {
+	showBlock(curso, asignatura);
+    } else {
+	hideBlock(curso, asignatura);
+    }
+    updateValues();
+}
+
+function hideBlock(curso, asignatura) {
+    var ects = cursos[curso][asignatura].ects;
+    numcredits -= ects;
+    nasignaturas--;
+    var c = cursos[curso];
+    var hours = c[asignatura]["hours"];
+    for(var i=0;i<hours.length;i++) {
+	var d = document.getElementById(curso + asignatura + hours[i]["start"] + hours[i]["day"]);
+	d.parentNode.removeChild(d);
 		}
-		window.location.hash = getHash();
-	}
+    var arrUrl = window.location.hash.split(",");
+    var newUrl = arrUrl.splice(0,arrUrl.length-2);
+    if(newUrl.length>0){
+	newUrl += ",";
+    }
+    window.location.hash = newUrl;
+}
 	
-	function hideBlock(curso, asignatura) {
-		var c = cursos[curso];
-		var hours = c[asignatura]["hours"];
-		for(var i=0;i<hours.length;i++) {
-			var d = document.getElementById(curso + asignatura + hours[i]["start"] + hours[i]["day"]);
-			d.parentNode.removeChild(d);
-		}
+function showBlock(curso, asignatura) {
+    var ects = cursos[curso][asignatura].ects;
+    var c = cursos[curso];
+    var hours = c[asignatura]["hours"];
+    numcredits += ects;
+    nasignaturas++;
+    for(var i=0;i<hours.length;i++) {
+	var bloque = document.createElement("div");
+	bloque.style.backgroundColor = c["color"];
+	bloque.appendChild(document.createTextNode(c[asignatura].name));
+	bloque.id = curso + asignatura + hours[i]["start"] + hours[i]["day"];
+	bloque.style.left = ((hours[i]["start"]-1)*8.333) + "%";
+	bloque.style.top = ((hours[i]["day"]-1)*20) + "%";
+	bloque.style.width = (hours[i]["duration"]*8.333) + "%";
+	document.getElementById("calgrid").appendChild(bloque);
+    }
+    var urlPlus = curso + "." + asignatura + ",";
+    if(!window.location.hash.includes(urlPlus)){
+	window.location.hash = window.location.hash + urlPlus;
+    }
+}
+
+function popList() {
+    var ctrldiv = document.getElementById("controls");
+    for(var c in cursos) {
+	var curso = cursos[c];
+	var d = document.createElement("div");
+	d.style.backgroundColor = curso["color"];
+	var s = document.createElement("span");
+	s.appendChild(document.createTextNode(c + ":"));
+	s.style.width = "70px";
+	s.style.float = "left";
+	d.appendChild(s);
+	for(var a in curso) {
+	    if(a=="color") continue;
+	    var label = document.createElement("label");
+	    var cb = document.createElement("input");
+	    cb.type = "checkbox";
+	    cb.name = a;
+	    cb.value = c;
+	    cb.id = c + "." + a;
+	    cb.onchange = function(){ toggleAsignatura(this) };
+	    label.appendChild(cb);
+	    label.appendChild(document.createTextNode(curso[a].name));
+	    d.appendChild(label);
 	}
+	ctrldiv.appendChild(d);
+    }
+    if(window.location.hash) {
+	setInputFromString(window.location.hash.substring(1));
 	
-	function showBlock(curso, asignatura) {
-		var c = cursos[curso];
-		var hours = c[asignatura]["hours"];
-		for(var i=0;i<hours.length;i++) {
-			var bloque = document.createElement("div");
-			bloque.style.backgroundColor = c["color"];
-			bloque.appendChild(document.createTextNode(c[asignatura].name));
-			bloque.id = curso + asignatura + hours[i]["start"] + hours[i]["day"];
-			bloque.style.left = ((hours[i]["start"]-1)*8.333) + "%";
-			bloque.style.top = ((hours[i]["day"]-1)*20) + "%";
-			bloque.style.width = (hours[i]["duration"]*8.333) + "%";
-			document.getElementById("calgrid").appendChild(bloque);
-		}
-	}
-	
-	function popList() {
-		var ctrldiv = document.getElementById("controls");
-		for(var c in cursos) {
-			var curso = cursos[c];
-			var d = document.createElement("div");
-			d.style.backgroundColor = curso["color"];
-			var s = document.createElement("span");
-			s.appendChild(document.createTextNode(c + ":"));
-			s.style.width = "70px";
-			s.style.float = "left";
-			d.appendChild(s);
-			for(var a in curso) {
-				if(a=="color") continue;
-				var label = document.createElement("label");
-				var cb = document.createElement("input");
-				cb.type = "checkbox";
-				cb.name = a;
-				cb.value = c;
-				cb.onchange = function(){ toggleAsignatura(this) };
-				label.appendChild(cb);
-				label.appendChild(document.createTextNode(curso[a].name));
-				d.appendChild(label);
-			}
-			ctrldiv.appendChild(d);
-		}
-		
-		if(window.location.hash) {
-			setInputFromString(window.location.hash.substring(1));
-		}
-	}
-	
-	function getHash() {
-		var cbs = document.getElementById("controls").getElementsByTagName("input");
-		var index, i, b=32, empty=1;
-		var array = new Uint32Array(Math.ceil(cbs.length/b));
-		for(i=0;i<cbs.length;i++) {
-			index = Math.floor(i/b);
-			array[index] = array[index] | ((cbs[i].checked?1:0) << (b-1-i%b));
-			if(cbs[i].checked) empty=0;
-		}
-		if(empty) return "";
-		return btoa(array);
-	}
-	
-	function setInputFromString(str) {
-		var a = atob(str).split(",");
-		var array = new Uint32Array(a.length);
-		for(var i=0;i<a.length;i++)
-			array[i] = parseInt(a[i]);
-		var cbs = document.getElementById("controls").getElementsByTagName("input");
-		var index, i, b=32;
-		for(i=0;i<cbs.length;i++) {
-			index = Math.floor(i/b);
-			if(cbs[i].checked != (array[index] & (1 << (b-1-i%b))) ) {
-				cbs[i].checked = !cbs[i].checked;
-				if ("createEvent" in document) {
-					var event = document.createEvent("HTMLEvents");
-					event.initEvent("change", false, true);
-					cbs[i].dispatchEvent(event);
-				} else {
-					cbs[i].fireEvent("onchange");
-				}
-			}
-		}
-		console.log(str);
-	}
+    }
+}
+
+function getHash() {
+    var cbs = document.getElementById("controls").getElementsByTagName("input");
+    var index, i, b=32, empty=1;
+    var array = new Uint32Array(Math.ceil(cbs.length/b));
+    for(i=0;i<cbs.length;i++) {
+	index = Math.floor(i/b);
+	array[index] = array[index] | ((cbs[i].checked?1:0) << (b-1-i%b));
+	if(cbs[i].checked) empty=0;
+    }
+    if(empty) return "";
+    return btoa(array);
+}
+
+function setInputFromString(str) {
+    var originalHash = window.location.hash;
+    var urlArr = originalHash.slice(1,-1).split(","); //el slice es para quitar la almohadilla y el ultim
+    for (elem in urlArr){
+	var togleButton = document.getElementById(urlArr[elem]);
+	console.log(togleButton);
+	var dataElem = urlArr[elem].split(".");
+	showBlock(dataElem[0], dataElem[1]);
+	togleButton.checked=true;
+    }
+    window.location.hash = originalHash;
+    /*
+      var a = atob(str).split(",");
+      var array = new Uint32Array(a.length);
+      for(var i=0;i<a.length;i++)
+      array[i] = parseInt(a[i]);
+      var cbs = document.getElementById("controls").getElementsByTagName("input");
+      var index, i, b=32;
+      for(i=0;i<cbs.length;i++) {
+      index = Math.floor(i/b);
+      if(cbs[i].checked != (array[index] & (1 << (b-1-i%b))) ) {
+      cbs[i].checked = !cbs[i].checked;
+      if ("createEvent" in document) {
+      var event = document.createEvent("HTMLEvents");
+      event.initEvent("change", false, true);
+      cbs[i].dispatchEvent(event);
+      } else {
+      cbs[i].fireEvent("onchange");
+      }
+      }
+      }
+      console.log(str);
+    */
+}
+
+
+document.addEventListener('DOMContentLoaded', function updateValues() {
+    console.log("entr");
+    updateValues();
+}, false);
+
+function updateValues(){
+    document.getElementById("ncreditos").innerHTML = numcredits;
+    document.getElementById("nasignaturas").innerHTML = nasignaturas;    
+}
+
+$(function() {
+    $("#export2PNG").click(function() {
+        html2canvas(document.getElementById("cal"), {
+            onrendered: function(canvas){
+                theCanvas = canvas;
+                document.body.appendChild(canvas);
+            } 
+        });
+    });
+});
 </script>
-<body onload="popList()">
-	<div id="cal">
-		<div id="calheader">
-			<div>9:00-10:00</div><div>10:00-11:00</div><div>11:00-12:00</div><div>12:00-13:00</div><div>13:00-14:00</div><div>14:00-15:00</div><div>15:00-16:00</div><div>16:00-17:00</div><div>17:00-18:00</div><div>18:00-19:00</div><div>19:00-20:00</div><div>20:00-21:00</div>
-		</div>
-		<div id="calgrid">
-		</div>
+    <body onload="popList()">
+      <div id="cal">
+	<div id="calheader">
+	  <div>9:00-10:00</div><div>10:00-11:00</div><div>11:00-12:00</div><div>12:00-13:00</div><div>13:00-14:00</div><div>14:00-15:00</div><div>15:00-16:00</div><div>16:00-17:00</div><div>17:00-18:00</div><div>18:00-19:00</div><div>19:00-20:00</div><div>20:00-21:00</div>
 	</div>
-	<div id="controls">
+	<div id="calgrid">
 	</div>
-	<div id="footer">
-		Para uso interno de ACM-UPM. Si tienes alguna queja, duda o sugerencia ponte en contacto con cualquier miembro de la asociaci�n para que esta sea ignorada lo m�s pronto posible.
+      </div>
+      <div id="extras">
+	<h3 id="credits">Créditos: <span id="ncreditos">0</span></h3>
+	<h3 style="padding-left:50px" id="asignaturas">Número asignaturas: <span id="nasignaturas">0</span></h3>
+	<div id="tools">
+          <!--button id="clearElements">Uncheck all</button-->
+          <input type="button" id="export2PNG" value="Save as PNG"/>
 	</div>
-</body>
+    </div>
+      <div id="controls">
+    </div>
+      <div id="footer">
+	Para uso interno de ACM-UPM. Si tienes alguna queja, duda o sugerencia ponte en contacto con cualquier miembro de la asociaci󮠰ara que esta sea ignorada lo más pronto posible.
+      </div>
+    
+      <div id="img-out"></div>
+    </body>
 </html>
