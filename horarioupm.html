@@ -277,7 +277,12 @@ src="html2canvas.js"></script>
 	"FEAE": {
 	    "name": "Fundamentos de Economía y Administración de Empresas",
 	    "hours": [
-		{"duration": 2, "start": 3, "day": 1},
+		{"duration": 2, "start": 3, "day": 1}],
+	    "ects": 3
+	},
+	"FGTIA": {
+	    "name": "Fundamentos de Gestión de Tecnologías de la Información de la Empresa",
+	    "hours": [
 		{"duration": 2, "start": 1, "day": 4}],
 	    "ects": 3
 	},
@@ -323,8 +328,13 @@ src="html2canvas.js"></script>
 	"FEAE": {
 	    "name": "Fundamentos de Economía y Administración de Empresas",
 	    "hours": [
-		{"duration": 2, "start": 1, "day": 1},
 		{"duration": 2, "start": 1, "day": 5}],
+	    "ects": 3
+	},
+	"FGTIA": {
+	    "name": "Fundamentos de Gestión de Tecnologías de la Información de la Empresa",
+	    "hours": [
+		{"duration": 2, "start": 1, "day": 1}],
 	    "ects": 3
 	},
 	"RdC": {
@@ -369,8 +379,13 @@ src="html2canvas.js"></script>
 	"FEAE": {
 	    "name": "Fundamentos de Economía y Administración de Empresas",
 	    "hours": [
-		{"duration": 2, "start": 7, "day": 4},
 		{"duration": 2, "start": 8, "day": 5}],
+	    "ects": 3
+	},
+	"FGTIA": {
+	    "name": "Fundamentos de Gestión de Tecnologías de la Información de la Empresa",
+	    "hours": [
+		{"duration": 2, "start": 7, "day": 4}],
 	    "ects": 3
 	},
 	"RdC": {
@@ -668,8 +683,11 @@ function showBlock(curso, asignatura) {
 	window.location.hash = window.location.hash + urlPlus;
     }
 }
-
+var control = false;
 function popList() {
+    if (control == true)
+	return;
+    control = true;
     var ctrldiv = document.getElementById("controls");
     for(var c in cursos) {
 	var curso = cursos[c];
@@ -699,6 +717,7 @@ function popList() {
 	setInputFromString(window.location.hash.substring(1));
 	
     }
+    updateValues();
 }
 
 function getHash() {
@@ -732,16 +751,7 @@ function updateValues(){
     document.getElementById("nasignaturas").innerHTML = nasignaturas;    
 }
 
-$(function() {
-    $("#export2PNG").click(function() {
-        html2canvas(document.getElementById("cal"), {
-            onrendered: function(canvas){
-                theCanvas = canvas;
-                document.body.appendChild(canvas);
-            } 
-        });
-    });
-});
+
 </script>
     <body onload="popList()">
       <div id="cal">
@@ -756,13 +766,14 @@ $(function() {
 	<h3 style="padding-left:50px" id="asignaturas">Número asignaturas: <span id="nasignaturas">0</span></h3>
 	<div id="tools">
           <!--button id="clearElements">Uncheck all</button-->
-          <!--input type="button" id="export2PNG" value="Save as PNG"/-->
+          <!--input type="button" id="export2PNG" onclick="Javascript:renderHTML()" value="Save as PNG"/-->
 	</div>
     </div>
       <div id="controls">
     </div>
       <div id="footer">
-	Para uso interno de ACM-UPM. Si tienes alguna queja, duda o sugerencia ponte en contacto con cualquier miembro de la asociaara que esta sea ignorada lo más pronto posible.
+    Para uso interno de ACM-UPM. Si tienes alguna queja, duda o sugerencia ponte en contacto con cualquier miembro de la asociaara que esta sea ignorada lo más pronto posible.<br>
+    Por @GoLoT y @Joex23
       </div>
     
       <div id="img-out"></div>
