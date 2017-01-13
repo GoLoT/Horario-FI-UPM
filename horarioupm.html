@@ -22,9 +22,9 @@
     #tools { float: right; }
 	#controls>label { padding: 2px; margin: 4px 25px 4px 4px; }
 </style>
-     <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-     <script language="JavaScript" type="text/javascript"
-src="html2canvas.js"></script>
+    <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="html2canvas.js"></script>
+    <script src="dom-to-image.js"></script>
 <script>
   var cursos = {
     "1M" : {
@@ -683,11 +683,7 @@ function showBlock(curso, asignatura) {
 	window.location.hash = window.location.hash + urlPlus;
     }
 }
-var control = false;
 function popList() {
-    if (control == true)
-	return;
-    control = true;
     var ctrldiv = document.getElementById("controls");
     for(var c in cursos) {
 	var curso = cursos[c];
@@ -751,6 +747,12 @@ function updateValues(){
     document.getElementById("nasignaturas").innerHTML = nasignaturas;    
 }
 
+function renderHTML(){
+    domtoimage.toBlob(document.getElementById('cal'))
+	.then(function (blob) {
+        window.saveAs(blob, 'my-node.png');
+    });
+}
 
 </script>
     <body onload="popList()">
@@ -766,7 +768,7 @@ function updateValues(){
 	<h3 style="padding-left:50px" id="asignaturas">Número asignaturas: <span id="nasignaturas">0</span></h3>
 	<div id="tools">
           <!--button id="clearElements">Uncheck all</button-->
-          <!--input type="button" id="export2PNG" onclick="Javascript:renderHTML()" value="Save as PNG"/-->
+          <input type="button" id="export2PNG" onclick="Javascript:renderHTML()" value="Save as PNG"/>
 	</div>
     </div>
       <div id="controls">
