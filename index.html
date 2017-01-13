@@ -2,13 +2,11 @@
   <meta charset="utf-8">
   <head>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="html2canvas.js"></script>
     <script language="JavaScript" type="text/javascript" src="js/main.js"></script>
     <title>Mierdahorario de la FI</title>
   </head>
   <body onload="popList()">
-    <div id="cal">
+    <div id="cal"  style="display: none">
       <div id="calheader">
         <div>9:00-10:00</div>
         <div>10:00-11:00</div>
@@ -25,12 +23,12 @@
       </div>
       <div id="calgrid"></div>
     </div>
+    <canvas id="calcanvas" width="2000" height="440" style="width: 90vw; max-width: 1150px; height: 20vw; max-height: 255px; margin: 0 auto; display: block; overflow: hidden;"></canvas>
     <div id="extras">
       <h3 id="credits">Créditos: <span id="ncreditos">0</span></h3>
       <h3 style="padding-left:50px" id="asignaturas">Número asignaturas: <span id="nasignaturas">0</span></h3>
       <div id="tools">
-        <!--button id="clearElements">Uncheck all</button-->
-        <!--input type="button" id="export2PNG" onclick="Javascript:renderHTML()" value="Save as PNG"/-->
+	<a id="pnglink" href="" download="horario.png">Descargar PNG</a>
       </div>
     </div>
     <div id="controls"></div>
