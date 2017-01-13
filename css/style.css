@@ -1,0 +1,19 @@
+#cal, #extras, #controls, #footer { min-width: 520px; width: 90%; margin: 0 auto; margin-top: 30px; }
+@media all and ( max-width: 1000px ) {
+  body { font-size: 65%; }
+}
+@media all and ( min-width: 1000px ) and ( max-width: 1200px ) {
+  body { font-size: 75%; }
+}
+@media all and ( min-width: 1600px ) {
+  body { font-size: 100%; }
+}
+#controls, #cal { border: 1px solid black; }
+#calgrid { height: 175; position: relative; }
+#calheader, #calgrid { width: 100%; }
+#calheader>div, #calgrid>div { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;display: inline-block; width: 8.333%; height: 35px; border: 1px solid black; text-align: center; }
+#calheader { height: 35px; overflow: hidden; }
+#calgrid>div { position: absolute; }
+#extras > * { display: inline-block; }
+#tools { float: right; }
+#controls>label { padding: 2px; margin: 4px 25px 4px 4px; }
