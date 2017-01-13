@@ -1,19 +1,32 @@
 <html>
   <meta charset="utf-8">
-  <head><title>Mierdahorario de la FI</title></head>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script language="JavaScript" type="text/javascript"
-          src="html2canvas.js"></script>
-  <script language="Javascript" type="text/javascript" src="js/main.js"></script>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="html2canvas.js"></script>
+    <script language="Javascript" type="text/javascript" src="js/main.js"></script>
+
+    <title>Mierdahorario de la FI</title>
+  </head>  
+  
   <body onload="popList()">
     <div id="cal">
       <div id="calheader">
-        <div>9:00-10:00</div><div>10:00-11:00</div><div>11:00-12:00</div><div>12:00-13:00</div><div>13:00-14:00</div><div>14:00-15:00</div><div>15:00-16:00</div><div>16:00-17:00</div><div>17:00-18:00</div><div>18:00-19:00</div><div>19:00-20:00</div><div>20:00-21:00</div>
+        <div>9:00-10:00</div>
+	<div>10:00-11:00</div>
+	<div>11:00-12:00</div>
+	<div>12:00-13:00</div>
+	<div>13:00-14:00</div>
+	<div>14:00-15:00</div>
+	<div>15:00-16:00</div>
+	<div>16:00-17:00</div>
+	<div>17:00-18:00</div>
+	<div>18:00-19:00</div>
+	<div>19:00-20:00</div>
+	<div>20:00-21:00</div>
       </div>
-      <div id="calgrid">
-      </div>
-    </div>
+      <div id="calgrid"></div>
+    </div>    
     <div id="extras">
       <h3 id="credits">Créditos: <span id="ncreditos">0</span></h3>
       <h3 style="padding-left:50px" id="asignaturas">Número asignaturas: <span id="nasignaturas">0</span></h3>
@@ -22,12 +35,10 @@
         <!--input type="button" id="export2PNG" value="Save as PNG"/-->
       </div>
     </div>
-    <div id="controls">
-    </div>
+    <div id="controls"></div>
     <div id="footer">
       Para uso interno de ACM-UPM. Si tienes alguna queja, duda o sugerencia ponte en contacto con cualquier miembro de la asociaara que esta sea ignorada lo más pronto posible.
     </div>
-
     <div id="img-out"></div>
   </body>
 </html>
