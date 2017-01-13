@@ -19,7 +19,7 @@ var cursos = {
         },
         "PYE1": {
             "name": "Probabilidad y Estadística I",
-	    "calname": "PyE 2",
+	    "calname": "PyE",
             "hours": [
                 {"duration": 2, "start": 3, "day": 1},
                 {"duration": 2, "start": 3, "day": 4}],
@@ -133,7 +133,7 @@ var cursos = {
             "name": "Sistemas Digitales",
 	    "calname": "Sistemas Digitales",
             "hours": [
-                {"duration": 2, "start": 3, "day": 1},
+                {"duration": 2, "start": 3, "day": 2},
                 {"duration": 2, "start": 1, "day": 4}],
             "ects": 6
         },
@@ -141,7 +141,7 @@ var cursos = {
             "name": "Cálculo",
 	    "calname": "Cálculo",
             "hours": [
-                {"duration": 2, "start": 3, "day": 2},
+                {"duration": 2, "start": 3, "day": 1},
                 {"duration": 2, "start": 1, "day": 3},
                 {"duration": 1, "start": 5, "day": 4}],
             "ects": 6
@@ -203,7 +203,7 @@ var cursos = {
 	    "calname": "Programación II",
             "hours": [
                 {"duration": 2, "start": 3, "day": 1},
-                {"duration": 2, "start": 2, "day": 2}],
+                {"duration": 2, "start": 1, "day": 2}],
             "ects": 6
         }
     },
@@ -213,7 +213,7 @@ var cursos = {
             "name": "Interacción Persona-Ordenador",
 	    "calname": "IPO",
             "hours": [
-                {"duration": 2, "start": 9, "day": 2},
+                {"duration": 2, "start": 10, "day": 2},
                 {"duration": 2, "start": 6, "day": 5}],
             "ects":6
         },
@@ -221,33 +221,33 @@ var cursos = {
             "name": "Probabilidad y Estadística I",
 	    "calname": "PyE",
             "hours": [
-                {"duration": 2, "start": 7, "day": 4},
-                {"duration": 2, "start": 7, "day": 5}],
+                {"duration": 2, "start": 8, "day": 4},
+                {"duration": 2, "start": 8, "day": 5}],
             "ects": 6
         },
         "SSDD": {
             "name": "Sistemas Digitales",
 	    "calname": "Sistemas Digitales",
             "hours": [
-                {"duration": 2, "start": 7, "day": 1},
-                {"duration": 2, "start": 9, "day": 3}],
+                {"duration": 2, "start": 8, "day": 1},
+                {"duration": 2, "start": 10, "day": 3}],
             "ects": 6
         },
         "Calc": {
             "name": "Cálculo",
 	    "calname": "Cálculo",
             "hours": [
-                {"duration": 1, "start": 6, "day": 2},
-                {"duration": 2, "start": 7, "day": 3},
-                {"duration": 2, "start": 9, "day": 4}],
+                {"duration": 1, "start": 7, "day": 2},
+                {"duration": 2, "start": 8, "day": 3},
+                {"duration": 2, "start": 10, "day": 4}],
             "ects": 6
         },
         "ProgII": {
             "name": "Programación II",
 	    "calname": "Programación II",
             "hours": [
-                {"duration": 2, "start": 9, "day": 1},
-                {"duration": 2, "start": 7, "day": 2}],
+                {"duration": 2, "start": 10, "day": 1},
+                {"duration": 2, "start": 8, "day": 2}],
             "ects": 6
         }
     },
@@ -381,55 +381,55 @@ var cursos = {
             "name": "Arquitectura de Computadores",
 	    "calname": "Arquitectura",
             "hours": [
-                {"duration": 2, "start": 7, "day": 1},
-                {"duration": 2, "start": 7, "day": 3},
-                {"duration": 1, "start": 6, "day": 4}],
+                {"duration": 2, "start": 8, "day": 1},
+                {"duration": 2, "start": 8, "day": 3},
+                {"duration": 1, "start": 7, "day": 4}],
             "ects": 6
         },
         "Concu": {
             "name": "Concurrencia",
 	    "calname": "Concurrencia",
             "hours": [
-                {"duration": 1, "start": 9, "day": 1},
-                {"duration": 2, "start": 6, "day": 2}],
+                {"duration": 1, "start": 10, "day": 1},
+                {"duration": 1, "start": 7, "day": 2}],
             "ects": 3
         },
         "FEAE": {
             "name": "Fundamentos de Economía y Administración de Empresas",
 	    "calname": "Economía",
             "hours": [
-                {"duration": 2, "start": 8, "day": 5}],
+                {"duration": 2, "start": 9, "day": 5}],
             "ects": 3
         },
         "FGTIE": {
             "name": "Fundamentos de Gestión de Tecnologías de la Información en la Empresa",
 	    "calname": "FGTIE",
             "hours": [
-                {"duration": 2, "start": 7, "day": 4}],
+                {"duration": 2, "start": 8, "day": 4}],
             "ects": 3
         },
         "RdC": {
             "name": "Redes de Computadores",
 	    "calname": "Redes",
             "hours": [
-                {"duration": 2, "start": 9, "day": 1},
-                {"duration": 1, "start": 6, "day": 3},
-                {"duration": 2, "start": 6, "day": 5}],
+                {"duration": 2, "start": 10, "day": 2},
+                {"duration": 1, "start": 7, "day": 3},
+                {"duration": 2, "start": 7, "day": 5}],
             "ects": 6
         },
         "PyEII": {
             "name": "Probabilidad y Estadística II",
 	    "calname": "PyE2",
             "hours": [
-                {"duration": 2, "start": 7, "day": 2}],
+                {"duration": 2, "start": 8, "day": 2}],
             "ects": 3
         },
         "BBDD": {
             "name": "Bases de Datos",
 	    "calname": "Bases de Datos",
             "hours": [
-                {"duration": 2, "start": 9, "day": 3},
-                {"duration": 2, "start": 9, "day": 4}],
+                {"duration": 2, "start": 10, "day": 3},
+                {"duration": 2, "start": 10, "day": 4}],
             "ects": 3
         }
     },
@@ -504,7 +504,7 @@ var cursos = {
             "name": "Programación Declarativa: Lógica y Restricciones",
 	    "calname": "Prolog",
             "hours": [
-                {"duration": 2, "start": 8, "day": 3}],
+                {"duration": 2, "start": 8, "day": 2}],
             "ects": 3
         },
         "PII": {
