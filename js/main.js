@@ -692,10 +692,8 @@ function toggleAsignatura(event){
     if(control)
 	redrawCanvas();
 }
-var control = false;
+
 function popList() {
-    if (control == true)
-        return;
     var ctrldiv = document.getElementById("controls");
     for(var c in cursos) {
         var curso = cursos[c];
