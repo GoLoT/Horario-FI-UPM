@@ -730,7 +730,11 @@ function popList() {
 
 function setInputFromString(str) {
     var originalHash = window.location.hash;
-    var urlArr = originalHash.substring(1,originalHash.length).split(",");
+    if (originalHash.startsWith("#A="))
+	originalHash = originalHash.substring(3,originalHash.length);
+    else
+	originalHash = originalHash.substring(1,originalHash.length);
+    var urlArr = originalHash.split(",");
     for (elem in urlArr){
 	if(!urlArr[elem]) continue;
 	console.log(urlArr[elem]);
@@ -787,7 +791,7 @@ function redrawCanvas() {
     }
     canvasctx.stroke();
 
-    var ects,c,hours,urlPlus = "";
+    var ects,c,hours,urlPlus = "A=";
     for(var i=0;i<cbs.length;i++) {
 	if(!cbs[i].checked) continue;
         curso = cbs[i].value;
@@ -815,7 +819,7 @@ function redrawCanvas() {
     }
     if(urlPlus.endsWith(","))
 	urlPlus = urlPlus.substr(0, urlPlus.length-1)
-    window.location.hash = urlPlus;
+    window.location.hash = urlPlus=="A="?"":urlPlus;
     savePNG();
 
     document.getElementById("ncreditos").innerHTML = numcredits;
