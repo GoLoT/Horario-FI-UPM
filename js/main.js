@@ -697,7 +697,7 @@ var cursos = {
 				},
 				{
 					"duration": 2,
-					"start": 8,
+					"start": 9,
 					"day": 3
 				}
 			],
@@ -1269,12 +1269,12 @@ var cursos = {
 				{
 					"duration": 2,
 					"start": 8,
-					"day": 3
+					"day": 4
 				},
 				{
 					"duration": 1,
 					"start": 7,
-					"day": 4
+					"day": 5
 				}
 			],
 			"ects": 6,
@@ -1685,6 +1685,11 @@ var cursos = {
 				"duration": 2,
 				"start": 6,
 				"day": 4
+			},
+            {
+				"duration": 2,
+				"start": 6,
+				"day": 5
 			}],
 			"ects": 6,
 			"aula": 6102
