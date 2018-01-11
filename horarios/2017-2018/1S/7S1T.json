@@ -1,0 +1,56 @@
+{
+  "7S1T": {
+    "color": "rgba(0, 255, 180, 0.3)",
+    "GPTI": {
+      "name": "Gestión de Procesos de Tecnologías de la información",
+      "calname": "GPTI",
+      "hours": [{
+          "duration": 1,
+          "start": 8,
+          "day": 3
+        },
+        {
+          "duration": 2,
+          "start": 7,
+          "day": 5
+        }
+      ],
+      "ects": 6,
+      "aula": 6105
+    },
+    "IS2": {
+      "name": "Ingeniería del Software II",
+      "calname": "IS2",
+      "hours": [{
+          "duration": 2,
+          "start": 7,
+          "day": 1
+        },
+        {
+          "duration": 1,
+          "start": 7,
+          "day": 3
+        }
+      ],
+      "ects": 6,
+      "aula": 6105
+    },
+    "EPAC": {
+      "name": "Inglés",
+      "calname": "Inglés",
+      "hours": [{
+          "duration": 2,
+          "start": 7,
+          "day": 2
+        },
+        {
+          "duration": 2,
+          "start": 7,
+          "day": 4
+        }
+      ],
+      "ects": 6,
+      "aula": 6105
+    }
+  }
+}

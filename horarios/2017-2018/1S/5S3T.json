@@ -1,0 +1,95 @@
+{
+  "5S3T": {
+    "color": "rgba(0, 255, 60, 0.3)",
+    "SSOO": {
+      "name": "Sistemas Operativos",
+      "calname": "Sistemas Operativos",
+      "hours": [{
+          "duration": 2,
+          "start": 10,
+          "day": 1
+        },
+        {
+          "duration": 2,
+          "start": 8,
+          "day": 4
+        },
+        {
+          "duration": 1,
+          "start": 10,
+          "day": 4
+        }
+      ],
+      "ects": 6,
+      "aula": 5102
+    },
+    "IA": {
+      "name": "Inteligencia Artificial",
+      "calname": "IA",
+      "hours": [{
+          "duration": 2,
+          "start": 8,
+          "day": 2
+        },
+        {
+          "duration": 2,
+          "start": 8,
+          "day": 3
+        }
+      ],
+      "ects": 6,
+      "aula": 5102
+    },
+    "Seguridad": {
+      "name": "Seguridad de las Tecnologías de la Información",
+      "calname": "Seguridad",
+      "hours": [{
+          "duration": 2,
+          "start": 8,
+          "day": 1
+        },
+        {
+          "duration": 2,
+          "start": 8,
+          "day": 5
+        }
+      ],
+      "ects": 6,
+      "aula": 5102
+    },
+    "IPO": {
+      "name": "Interacción Persona Ordenador",
+      "calname": "IPO",
+      "hours": [{
+          "duration": 2,
+          "start": 10,
+          "day": 1
+        },
+        {
+          "duration": 2,
+          "start": 8,
+          "day": 4
+        }
+      ],
+      "ects": 6,
+      "aula": 5102
+    },
+    "PdL": {
+      "name": "Procesadores de Lenguajes",
+      "calname": "PdL",
+      "hours": [{
+          "duration": 2,
+          "start": 10,
+          "day": 3
+        },
+        {
+          "duration": 1,
+          "start": 11,
+          "day": 4
+        }
+      ],
+      "ects": 3,
+      "aula": 5102
+    }
+  }
+}

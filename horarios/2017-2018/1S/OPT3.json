@@ -1,0 +1,100 @@
+{
+  "OPT3": {
+    "color": "rgba(0, 255, 120, 0.3)",
+    "SSOpto": {
+      "name": "Sistemas Optoelectrónicos",
+      "calname": "SSOpto",
+      "hours": [{
+        "duration": 2,
+        "start": 3,
+        "day": 1
+      }],
+      "ects": 3,
+      "aula": 6101
+    },
+    "ANI": {
+      "name": "Aplicaciones Numéricas de la Informática",
+      "calname": "Aplicaciones Numéricas",
+      "hours": [{
+        "duration": 2,
+        "start": 3,
+        "day": 1
+      }],
+      "ects": 3,
+      "aula": 5102
+    },
+    "MW": {
+      "name": "Middleware",
+      "calname": "Middleware",
+      "hours": [{
+        "duration": 2,
+        "start": 6,
+        "day": 3
+      }],
+      "ects": 3,
+      "aula": 6305
+    },
+    "Inglés": {
+      "name": "Building up Communicative Skills",
+      "calname": "Inglés",
+      "hours": [{
+        "duration": 2,
+        "start": 6,
+        "day": 3
+      }],
+      "ects": 3,
+      "aula": 6101
+    },
+    "II": {
+      "name": "Informática Industrial",
+      "calname": "Inf. Industrial",
+      "hours": [{
+          "duration": 2,
+          "start": 10,
+          "day": 2
+        },
+        {
+          "duration": 2,
+          "start": 6,
+          "day": 5
+        }
+      ],
+      "ects": 6,
+      "aula": 5102
+    },
+    "ED": {
+      "name": "Ecuaciones Diferenciales",
+      "calname": "Ecs. Diff.",
+      "hours": [{
+          "duration": 2,
+          "start": 10,
+          "day": 2
+        },
+        {
+          "duration": 2,
+          "start": 6,
+          "day": 4
+        }
+      ],
+
+      "ects": 6,
+      "aula": 6101
+    },
+    "IO": {
+      "name": "Investigación Operativa",
+      "calname": "Inv. Operativa",
+      "hours": [{
+        "duration": 2,
+        "start": 6,
+        "day": 4
+      },
+            {
+        "duration": 2,
+        "start": 6,
+        "day": 5
+      }],
+      "ects": 6,
+      "aula": 6102
+    }
+  }
+}
