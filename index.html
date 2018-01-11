@@ -1,42 +1,47 @@
-<html>
-  <meta charset="utf-8">
-  <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script language="JavaScript" type="text/javascript" src="js/main.js"></script>
-    <title>Mierdahorario de la FI</title>
-  </head>
-  <body onload="popList()">
-    <div id="cal"  style="display: none">
-      <div id="calheader">
-        <div>9:00-10:00</div>
-        <div>10:00-11:00</div>
-        <div>11:00-12:00</div>
-        <div>12:00-13:00</div>
-        <div>13:00-14:00</div>
-        <div>14:00-15:00</div>
-        <div>15:00-16:00</div>
-        <div>16:00-17:00</div>
-        <div>17:00-18:00</div>
-        <div>18:00-19:00</div>
-        <div>19:00-20:00</div>
-        <div>20:00-21:00</div>
-      </div>
-      <div id="calgrid"></div>
+<!DOCTYPE html>
+<html lang="es">
+<meta charset="utf-8">
+
+<head>
+  <title>Mierdahorario de la FI</title>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script language="JavaScript" type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body onload="popList()">
+  <div id="cal" style="display: none">
+    <div id="calheader">
+      <div>9:00-10:00</div>
+      <div>10:00-11:00</div>
+      <div>11:00-12:00</div>
+      <div>12:00-13:00</div>
+      <div>13:00-14:00</div>
+      <div>14:00-15:00</div>
+      <div>15:00-16:00</div>
+      <div>16:00-17:00</div>
+      <div>17:00-18:00</div>
+      <div>18:00-19:00</div>
+      <div>19:00-20:00</div>
+      <div>20:00-21:00</div>
     </div>
-    <canvas id="calcanvas" width="2000" height="440" style="width: 90vw; max-width: 1150px; height: 20vw; max-height: 255px; margin: 0 auto; display: block; overflow: hidden;"></canvas>
-    <div id="extras">
-      <h3 id="credits">Créditos: <span id="ncreditos">0</span></h3>
-      <h3 style="padding-left:50px" id="asignaturas">Número asignaturas: <span id="nasignaturas">0</span></h3>
-      <div id="tools">
-	<a id="pnglink" href="" download="horario.png">Descargar PNG</a>
-      </div>
+    <div id="calgrid"></div>
+  </div>
+  <canvas id="calcanvas" width="2000" height="440" style="width: 90vw; max-width: 1150px; height: 20vw; max-height: 255px; margin: 0 auto; display: block; overflow: hidden;"></canvas>
+  <div id="extras">
+    <h3 id="credits">Créditos: <span id="ncreditos">0</span></h3>
+    <h3 style="padding-left:50px" id="asignaturas">Número asignaturas: <span id="nasignaturas">0</span></h3>
+    <div id="tools">
+      <a id="pnglink" href="" download="horario.png">Descargar PNG</a>
     </div>
-    <div style="margin: 0 auto; width: 90%"><label><input type="checkbox" id="showClass" onclick="redrawCanvas()">Mostrar aula</label><br><label><input type="checkbox" id="showGroup" onclick="redrawCanvas()">Mostrar grupo</label></div>
-    <div id="controls"></div>
-    <div id="footer">
-      Para uso interno de ACM-UPM. Si tienes alguna queja, duda o sugerencia ponte en contacto con cualquier miembro de la asociación para que esta sea ignorada lo más pronto posible.<br>
-      Por @GoLoT y @Joex23
-    </div>
-    <div id="img-out"></div>
-  </body>
+  </div>
+  <div style="margin: 0 auto; width: 90%"><label><input type="checkbox" id="showClass" onclick="redrawCanvas()">Mostrar aula</label><br><label><input type="checkbox" id="showGroup" onclick="redrawCanvas()">Mostrar grupo</label></div>
+  <div id="controls"></div>
+  <div id="footer">
+    Para uso interno de ACM-UPM. Si tienes alguna queja, duda o sugerencia ponte en contacto con cualquier miembro de la asociación para que esta sea ignorada lo más pronto posible.<br> Por @GoLoT y @Joex23
+  </div>
+  <div id="img-out"></div>
+</body>
+
 </html>
