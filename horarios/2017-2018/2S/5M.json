@@ -1,0 +1,94 @@
+{
+  "5T": {
+    "color": "rgba(255, 240, 0, 0.3)",
+    "AL": {
+      "name": "Álgebra Lineal",
+      "calname": "undefined",
+      "hours": [{
+          "duration": 2,
+          "start": 7,
+          "day": 1
+        },
+        {
+          "duration": 2,
+          "start": 9,
+          "day": 3
+        }
+      ],
+      "ects": 6
+    },
+    "FFTI": {
+      "name": "Fundamentos Físicos y Tecnológicos de la Informática",
+      "calname": "undefined",
+      "hours": [{
+          "duration": 2,
+          "start": 9,
+          "day": 2
+        },
+        {
+          "duration": 1,
+          "start": 11,
+          "day": 1
+        }, {
+          "duration": 2,
+          "start": 7,
+          "day": 5
+        }
+      ],
+      "ects": 6
+    },
+    "LOG": {
+      "name": "Lógica",
+      "calname": "undefined",
+      "hours": [{
+          "duration": 2,
+          "start": 9,
+          "day": 1
+        },
+        {
+          "duration": 2,
+          "start": 8,
+          "day": 4
+        }
+      ],
+      "ects": 6
+    },
+    "Prog1": {
+      "name": "Programación 1",
+      "calname": "undefined",
+      "hours": [{
+          "duration": 2,
+          "start": 10,
+          "day": 4
+        },
+        {
+          "duration": 2,
+          "start": 7,
+          "day": 3
+        }
+      ],
+      "ects": 6
+    },
+    "MD1": {
+      "name": "Matemática Discreta 1",
+      "calname": "undefined",
+      "hours": [{
+          "duration": 2,
+          "start": 7,
+          "day": 2
+        },
+        {
+          "duration": 2,
+          "start": 9,
+          "day": 5
+        },
+        {
+          "duration": 1,
+          "start": 11,
+          "day": 3
+        }
+      ],
+      "ects": 6
+    }
+  }
+}

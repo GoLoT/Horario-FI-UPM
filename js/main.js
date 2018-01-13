@@ -1,9 +1,9 @@
 var cursos = {
   "1M": {
     "color": "rgba(255, 0, 0, 0.3)",
-    "Álgebra": {
+    "AL": {
       "name": "Álgebra Lineal",
-      "calname": "Álgebra",
+      "calname": "undefined",
       "hours": [{
           "duration": 2,
           "start": 1,
@@ -15,29 +15,11 @@ var cursos = {
           "day": 2
         }
       ],
-      "ects": 6,
-      "aula": 5001
+      "ects": 6
     },
-    "Lógica": {
-      "name": "Lógica",
-      "calname": "Lógica",
-      "hours": [{
-          "duration": 2,
-          "start": 3,
-          "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 3
-        }
-      ],
-      "ects": 6,
-      "aula": 6305
-    },
-    "FFyTI": {
+    "FFTI": {
       "name": "Fundamentos Físicos y Tecnológicos de la Informática",
-      "calname": "FFyTI",
+      "calname": "undefined",
       "hours": [{
           "duration": 1,
           "start": 5,
@@ -54,71 +36,11 @@ var cursos = {
           "day": 5
         }
       ],
-      "ects": 6,
-      "aula": 5001
+      "ects": 6
     },
-    "DiscretaI": {
-      "name": "Matemática Discreta I",
-      "calname": "Matemática Discreta I",
-      "hours": [{
-          "duration": 1,
-          "start": 5,
-          "day": 3
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 4
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5001
-    },
-    "ProgI": {
-      "name": "Programación I",
-      "calname": "Programación I",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 2
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 3
-        }
-      ],
-      "ects": 6,
-      "aula": 5001
-    }
-  },
-  "1M-B": {
-    "color": "rgba(255, 0, 0, 0.3)",
-    "Álgebra": {
-      "name": "Álgebra Lineal",
-      "calname": "Álgebra",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 2
-        }
-      ],
-      "ects": 6,
-      "aula": 5001
-    },
-    "Lógica": {
+    "LOG": {
       "name": "Lógica",
-      "calname": "Lógica",
+      "calname": "undefined",
       "hours": [{
           "duration": 2,
           "start": 3,
@@ -130,56 +52,11 @@ var cursos = {
           "day": 3
         }
       ],
-      "ects": 6,
-      "aula": 6305
+      "ects": 6
     },
-    "FFyTI": {
-      "name": "Fundamentos Físicos y Tecnológicos de la Informática",
-      "calname": "FFyTI",
-      "hours": [{
-          "duration": 1,
-          "start": 5,
-          "day": 2
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 4
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5001
-    },
-    "DiscretaI": {
-      "name": "Matemática Discreta I",
-      "calname": "Matemática Discreta I",
-      "hours": [{
-          "duration": 1,
-          "start": 5,
-          "day": 3
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 4
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5001
-    },
-    "ProgI": {
-      "name": "Programación I",
-      "calname": "Programación I",
+    "Prog1": {
+      "name": "Programación 1",
+      "calname": "undefined",
       "hours": [{
           "duration": 2,
           "start": 1,
@@ -191,15 +68,35 @@ var cursos = {
           "day": 3
         }
       ],
-      "ects": 6,
-      "aula": 5001
+      "ects": 6
+    },
+    "MD1": {
+      "name": "Matemática Discreta 1",
+      "calname": "undefined",
+      "hours": [{
+          "duration": 2,
+          "start": 3,
+          "day": 4
+        },
+        {
+          "duration": 1,
+          "start": 5,
+          "day": 3
+        },
+        {
+          "duration": 2,
+          "start": 1,
+          "day": 5
+        },
+      ],
+      "ects": 6
     }
   },
   "2M": {
     "color": "rgba(255, 60, 0, 0.3)",
-    "Álgebra": {
+    "AL": {
       "name": "Álgebra Lineal",
-      "calname": "Álgebra",
+      "calname": "undefined",
       "hours": [{
           "duration": 2,
           "start": 1,
@@ -211,29 +108,11 @@ var cursos = {
           "day": 4
         }
       ],
-      "ects": 6,
-      "aula": 5001
+      "ects": 6
     },
-    "Lógica": {
-      "name": "Lógica",
-      "calname": "Lógica",
-      "hours": [{
-          "duration": 2,
-          "start": 3,
-          "day": 3
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 6305
-    },
-    "FFyTI": {
+    "FFTI": {
       "name": "Fundamentos Físicos y Tecnológicos de la Informática",
-      "calname": "FFyTI",
+      "calname": "undefined",
       "hours": [{
           "duration": 2,
           "start": 1,
@@ -243,78 +122,17 @@ var cursos = {
           "duration": 2,
           "start": 3,
           "day": 2
-        },
-        {
+        }, {
           "duration": 1,
           "start": 5,
           "day": 4
         }
       ],
-      "ects": 6,
-      "aula": 5001
+      "ects": 6
     },
-    "DiscretaI": {
-      "name": "Matemática Discreta I",
-      "calname": "Matemática Discreta I",
-      "hours": [{
-          "duration": 2,
-          "start": 3,
-          "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 2
-        },
-        {
-          "duration": 1,
-          "start": 5,
-          "day": 3
-        }
-      ],
-      "ects": 6,
-      "aula": 5001
-    },
-    "ProgI": {
-      "name": "Programación I",
-      "calname": "Programación I",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 4
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5001
-    }
-  },
-  "2M-B": {
-    "color": "rgba(255, 60, 0, 0.3)",
-    "Álgebra": {
-      "name": "Álgebra Lineal",
-      "calname": "Álgebra",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 3
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 4
-        }
-      ],
-      "ects": 6,
-      "aula": 5001
-    },
-    "Lógica": {
+    "LOG": {
       "name": "Lógica",
-      "calname": "Lógica",
+      "calname": "undefined",
       "hours": [{
           "duration": 2,
           "start": 3,
@@ -326,34 +144,27 @@ var cursos = {
           "day": 5
         }
       ],
-      "ects": 6,
-      "aula": 6305
+      "ects": 6
     },
-    "FFyTI": {
-      "name": "Fundamentos Físicos y Tecnológicos de la Informática",
-      "calname": "FFyTI",
+    "Prog1": {
+      "name": "Programación 1",
+      "calname": "undefined",
       "hours": [{
           "duration": 2,
           "start": 1,
-          "day": 1
+          "day": 4
         },
         {
           "duration": 2,
           "start": 3,
-          "day": 2
-        },
-        {
-          "duration": 1,
-          "start": 5,
-          "day": 4
+          "day": 5
         }
       ],
-      "ects": 6,
-      "aula": 5001
+      "ects": 6
     },
-    "DiscretaI": {
-      "name": "Matemática Discreta I",
-      "calname": "Matemática Discreta I",
+    "MD1": {
+      "name": "Matemática Discreta 1",
+      "calname": "undefined",
       "hours": [{
           "duration": 2,
           "start": 3,
@@ -370,32 +181,14 @@ var cursos = {
           "day": 3
         }
       ],
-      "ects": 6,
-      "aula": 5001
-    },
-    "ProgI": {
-      "name": "Programación I",
-      "calname": "Programación I",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 4
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5001
+      "ects": 6
     }
   },
   "3M": {
     "color": "rgba(255, 120, 0, 0.3)",
-    "Álgebra": {
+    "AL": {
       "name": "Álgebra Lineal",
-      "calname": "Álgebra",
+      "calname": "undefined",
       "hours": [{
           "duration": 2,
           "start": 1,
@@ -407,29 +200,11 @@ var cursos = {
           "day": 5
         }
       ],
-      "ects": 6,
-      "aula": 5001
+      "ects": 6
     },
-    "Lógica": {
-      "name": "Lógica",
-      "calname": "Lógica",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 4
-        }
-      ],
-      "ects": 6,
-      "aula": 6305
-    },
-    "FFyTI": {
+    "FFTI": {
       "name": "Fundamentos Físicos y Tecnológicos de la Informática",
-      "calname": "FFyTI",
+      "calname": "undefined",
       "hours": [{
           "duration": 2,
           "start": 1,
@@ -439,117 +214,49 @@ var cursos = {
           "duration": 2,
           "start": 3,
           "day": 3
-        },
-        {
+        }, {
           "duration": 1,
           "start": 5,
           "day": 4
         }
       ],
-      "ects": 6,
-      "aula": 5001
+      "ects": 6
     },
-    "DiscretaI": {
-      "name": "Matemática Discreta I",
-      "calname": "Matemática Discreta I",
-      "hours": [{
-          "duration": 2,
-          "start": 3,
-          "day": 2
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 3
-        },
-        {
-          "duration": 1,
-          "start": 5,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5001
-    },
-    "ProgI": {
-      "name": "Programación I",
-      "calname": "Programación I",
-      "hours": [{
-          "duration": 2,
-          "start": 3,
-          "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5001
-    }
-  },
-  "3M-B": {
-    "color": "rgba(255, 120, 0, 0.3)",
-    "Álgebra": {
-      "name": "Álgebra Lineal",
-      "calname": "Álgebra",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 4
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5001
-    },
-    "Lógica": {
+    "LOG": {
       "name": "Lógica",
-      "calname": "Lógica",
+      "calname": "undefined",
       "hours": [{
+          "duration": 2,
+          "start": 3,
+          "day": 4
+        },
+        {
           "duration": 2,
           "start": 1,
           "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 4
         }
       ],
-      "ects": 6,
-      "aula": 6305
+      "ects": 6
     },
-    "FFyTI": {
-      "name": "Fundamentos Físicos y Tecnológicos de la Informática",
-      "calname": "FFyTI",
+    "Prog1": {
+      "name": "Programación 1",
+      "calname": "undefined",
       "hours": [{
           "duration": 2,
           "start": 1,
-          "day": 2
+          "day": 5
         },
         {
           "duration": 2,
           "start": 3,
-          "day": 3
-        },
-        {
-          "duration": 1,
-          "start": 5,
-          "day": 4
+          "day": 1
         }
       ],
-      "ects": 6,
-      "aula": 5001
+      "ects": 6
     },
-    "DiscretaI": {
-      "name": "Matemática Discreta I",
-      "calname": "Matemática Discreta I",
+    "MD1": {
+      "name": "Matemática Discreta 1",
+      "calname": "undefined",
       "hours": [{
           "duration": 2,
           "start": 3,
@@ -564,34 +271,16 @@ var cursos = {
           "duration": 1,
           "start": 5,
           "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5001
-    },
-    "ProgI": {
-      "name": "Programación I",
-      "calname": "Programación I",
-      "hours": [{
-          "duration": 2,
-          "start": 3,
-          "day": 1
         },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 5
-        }
       ],
-      "ects": 6,
-      "aula": 5001
+      "ects": 6
     }
   },
   "4M": {
     "color": "rgba(255, 180, 0, 0.3)",
-    "Álgebra": {
+    "AL": {
       "name": "Álgebra Lineal",
-      "calname": "Álgebra",
+      "calname": "undefined",
       "hours": [{
           "duration": 2,
           "start": 1,
@@ -603,37 +292,34 @@ var cursos = {
           "day": 3
         }
       ],
-      "ects": 6,
-      "aula": 5001
+      "ects": 6
     },
-    "Lógica": {
-      "name": "Lógica",
-      "calname": "Lógica",
-      "hours": [{
-          "duration": 2,
-          "start": 3,
-          "day": 2
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 4
-        }
-      ],
-      "ects": 6,
-      "aula": 6305
-    },
-    "FFyTI": {
+    "FFTI": {
       "name": "Fundamentos Físicos y Tecnológicos de la Informática",
-      "calname": "FFyTI",
+      "calname": "undefined",
       "hours": [{
+          "duration": 2,
+          "start": 1,
+          "day": 5
+        },
+        {
           "duration": 2,
           "start": 3,
           "day": 1
-        },
-        {
+        }, {
           "duration": 1,
           "start": 5,
+          "day": 3
+        }
+      ],
+      "ects": 6
+    },
+    "LOG": {
+      "name": "Lógica",
+      "calname": "undefined",
+      "hours": [{
+          "duration": 2,
+          "start": 3,
           "day": 3
         },
         {
@@ -642,20 +328,14 @@ var cursos = {
           "day": 5
         }
       ],
-      "ects": 6,
-      "aula": 5001
+      "ects": 6
     },
-    "DiscretaI": {
-      "name": "Matemática Discreta I",
-      "calname": "Matemática Discreta I",
+    "Prog1": {
+      "name": "Programación 1",
+      "calname": "undefined",
       "hours": [{
           "duration": 2,
           "start": 1,
-          "day": 1
-        },
-        {
-          "duration": 1,
-          "start": 5,
           "day": 4
         },
         {
@@ -664,32 +344,35 @@ var cursos = {
           "day": 5
         }
       ],
-      "ects": 6,
-      "aula": 5001
+      "ects": 6
     },
-    "ProgI": {
-      "name": "Programación I",
-      "calname": "Programación I",
+    "MD1": {
+      "name": "Matemática Discreta 1",
+      "calname": "undefined",
       "hours": [{
           "duration": 2,
-          "start": 1,
-          "day": 3
+          "start": 3,
+          "day": 1
         },
         {
           "duration": 2,
-          "start": 3,
-          "day": 4
+          "start": 1,
+          "day": 2
+        },
+        {
+          "duration": 1,
+          "start": 5,
+          "day": 3
         }
       ],
-      "ects": 6,
-      "aula": 5001
+      "ects": 6
     }
   },
   "5T": {
     "color": "rgba(255, 240, 0, 0.3)",
-    "Álgebra": {
+    "AL": {
       "name": "Álgebra Lineal",
-      "calname": "Álgebra",
+      "calname": "undefined",
       "hours": [{
           "duration": 2,
           "start": 7,
@@ -701,1010 +384,91 @@ var cursos = {
           "day": 3
         }
       ],
-      "ects": 6,
-      "aula": 5001
+      "ects": 6
     },
-    "Lógica": {
-      "name": "Lógica",
-      "calname": "Lógica",
-      "hours": [{
-          "duration": 2,
-          "start": 9,
-          "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 8,
-          "day": 4
-        }
-      ],
-      "ects": 6,
-      "aula": 6305
-    },
-    "FFyTI": {
+    "FFTI": {
       "name": "Fundamentos Físicos y Tecnológicos de la Informática",
-      "calname": "FFyTI",
+      "calname": "undefined",
       "hours": [{
-          "duration": 1,
-          "start": 11,
-          "day": 1
-        },
-        {
           "duration": 2,
           "start": 9,
           "day": 2
         },
         {
+          "duration": 1,
+          "start": 11,
+          "day": 1
+        }, {
           "duration": 2,
           "start": 7,
           "day": 5
         }
       ],
-      "ects": 6,
-      "aula": 5001
+      "ects": 6
     },
-    "DiscretaI": {
-      "name": "Matemática Discreta I",
-      "calname": "Matemática Discreta I",
+    "LOG": {
+      "name": "Lógica",
+      "calname": "undefined",
+      "hours": [{
+          "duration": 2,
+          "start": 9,
+          "day": 1
+        },
+        {
+          "duration": 2,
+          "start": 8,
+          "day": 4
+        }
+      ],
+      "ects": 6
+    },
+    "Prog1": {
+      "name": "Programación 1",
+      "calname": "undefined",
+      "hours": [{
+          "duration": 2,
+          "start": 10,
+          "day": 4
+        },
+        {
+          "duration": 2,
+          "start": 7,
+          "day": 3
+        }
+      ],
+      "ects": 6
+    },
+    "MD1": {
+      "name": "Matemática Discreta 1",
+      "calname": "undefined",
       "hours": [{
           "duration": 2,
           "start": 7,
           "day": 2
-        },
-        {
-          "duration": 1,
-          "start": 11,
-          "day": 3
         },
         {
           "duration": 2,
           "start": 9,
           "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5001
-    },
-    "ProgI": {
-      "name": "Programación I",
-      "calname": "Programación I",
-      "hours": [{
-          "duration": 2,
-          "start": 7,
-          "day": 3
-        },
-        {
-          "duration": 2,
-          "start": 10,
-          "day": 4
-        }
-      ],
-      "ects": 6,
-      "aula": 5001
-    }
-  },
-  "3S1M": {
-    "color": "rgba(180, 255, 0, 0.3)",
-    "AED": {
-      "name": "Algoritmos y Estructura de Datos",
-      "calname": "AED",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 5,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    },
-    "Lenguajes": {
-      "name": "Lenguajes Formales, Autómatas y Computabilidad",
-      "calname": "Lenguajes",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 2
-        },
-        {
-          "duration": 1,
-          "start": 5,
-          "day": 3
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    },
-    "PPS": {
-      "name": "Programación para Sistemas",
-      "calname": "PPS",
-      "hours": [{
-        "duration": 2,
-        "start": 3,
-        "day": 4
-      }],
-      "ects": 3,
-      "aula": 5002
-    },
-    "Algorítmica": {
-      "name": "Algorítmica Numérica",
-      "calname": "Algorítmica",
-      "hours": [{
-          "duration": 1,
-          "start": 5,
-          "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 3
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 4
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    },
-    "DiscretaII": {
-      "name": "Matemática Discreta II",
-      "calname": "DiscretaII",
-      "hours": [{
-        "duration": 2,
-        "start": 3,
-        "day": 1
-      }, {
-        "duration": 1,
-        "start": 5,
-        "day": 4
-      }],
-      "ects": 3,
-      "aula": 6205
-    },
-    "EdC": {
-      "name": "Estructura de Computadores",
-      "calname": "Estructura",
-      "hours": [{
-          "duration": 2,
-          "start": 3,
-          "day": 2
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 3
-        },
-        {
-          "duration": 1,
-          "start": 4,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    }
-  },
-  "3S1M-B": {
-    "color": "rgba(180, 255, 0, 0.3)",
-    "AED": {
-      "name": "Algoritmos y Estructura de Datos",
-      "calname": "AED",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 5,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    },
-    "Lenguajes": {
-      "name": "Lenguajes Formales, Autómatas y Computabilidad",
-      "calname": "Lenguajes",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 2
-        },
-        {
-          "duration": 1,
-          "start": 5,
-          "day": 3
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    },
-    "PPS": {
-      "name": "Programación para Sistemas",
-      "calname": "PPS",
-      "hours": [{
-        "duration": 2,
-        "start": 3,
-        "day": 4
-      }],
-      "ects": 3,
-      "aula": 5002
-    },
-    "Algorítmica": {
-      "name": "Algorítmica Numérica",
-      "calname": "Algorítmica",
-      "hours": [{
-          "duration": 1,
-          "start": 5,
-          "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 3
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 4
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    },
-    "DiscretaII": {
-      "name": "Matemática Discreta II",
-      "calname": "DiscretaII",
-      "hours": [{
-        "duration": 2,
-        "start": 3,
-        "day": 1
-      }, {
-        "duration": 1,
-        "start": 5,
-        "day": 4
-      }],
-      "ects": 3,
-      "aula": 6205
-    },
-    "EdC": {
-      "name": "Estructura de Computadores",
-      "calname": "Estructura",
-      "hours": [{
-          "duration": 2,
-          "start": 3,
-          "day": 2
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 3
-        },
-        {
-          "duration": 1,
-          "start": 4,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    }
-  },
-  "3S2M": {
-    "color": "rgba(120, 255, 0, 0.3)",
-    "AED": {
-      "name": "Algoritmos y Estructura de Datos",
-      "calname": "AED",
-      "hours": [{
-          "duration": 2,
-          "start": 3,
-          "day": 2
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    },
-    "Lenguajes": {
-      "name": "Lenguajes Formales, Autómatas y Computabilidad",
-      "calname": "Lenguajes",
-      "hours": [{
-          "duration": 1,
-          "start": 2,
-          "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 3
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    },
-    "PPS": {
-      "name": "Programación para Sistemas",
-      "calname": "PPS",
-      "hours": [{
-        "duration": 2,
-        "start": 3,
-        "day": 5
-      }],
-      "ects": 3,
-      "aula": 5002
-    },
-    "Algorítmica": {
-      "name": "Algorítmica Numérica",
-      "calname": "Algorítmica",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 2
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 3
-        },
-        {
-          "duration": 1,
-          "start": 5,
-          "day": 4
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    },
-    "DiscretaII": {
-      "name": "Matemática Discreta II",
-      "calname": "DiscretaII",
-      "hours": [{
-        "duration": 1,
-        "start": 5,
-        "day": 1
-      }, {
-        "duration": 2,
-        "start": 3,
-        "day": 4
-      }],
-      "ects": 3,
-      "aula": 6205
-    },
-    "EdC": {
-      "name": "Estructura de Computadores",
-      "calname": "Estructura",
-      "hours": [{
-          "duration": 2,
-          "start": 3,
-          "day": 1
-        },
-        {
-          "duration": 1,
-          "start": 5,
-          "day": 3
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 4
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    }
-  },
-  "3S2M-B": {
-    "color": "rgba(120, 255, 0, 0.3)",
-    "AED": {
-      "name": "Algoritmos y Estructura de Datos",
-      "calname": "AED",
-      "hours": [{
-          "duration": 2,
-          "start": 3,
-          "day": 2
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    },
-    "Lenguajes": {
-      "name": "Lenguajes Formales, Autómatas y Computabilidad",
-      "calname": "Lenguajes",
-      "hours": [{
-          "duration": 1,
-          "start": 2,
-          "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 3
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    },
-    "PPS": {
-      "name": "Programación para Sistemas",
-      "calname": "PPS",
-      "hours": [{
-        "duration": 2,
-        "start": 3,
-        "day": 5
-      }],
-      "ects": 3,
-      "aula": 5002
-    },
-    "Algorítmica": {
-      "name": "Algorítmica Numérica",
-      "calname": "Algorítmica",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 2
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 3
-        },
-        {
-          "duration": 1,
-          "start": 5,
-          "day": 4
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    },
-    "DiscretaII": {
-      "name": "Matemática Discreta II",
-      "calname": "DiscretaII",
-      "hours": [{
-        "duration": 1,
-        "start": 5,
-        "day": 1
-      }, {
-        "duration": 2,
-        "start": 3,
-        "day": 4
-      }],
-      "ects": 3,
-      "aula": 6205
-    },
-    "EdC": {
-      "name": "Estructura de Computadores",
-      "calname": "Estructura",
-      "hours": [{
-          "duration": 2,
-          "start": 3,
-          "day": 1
-        },
-        {
-          "duration": 1,
-          "start": 5,
-          "day": 3
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 4
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    }
-  },
-  "3S3T": {
-    "color": "rgba(60, 255, 0, 0.3)",
-    "AED": {
-      "name": "Algoritmos y Estructura de Datos",
-      "calname": "AED",
-      "hours": [{
-          "duration": 2,
-          "start": 8,
-          "day": 3
-        },
-        {
-          "duration": 2,
-          "start": 8,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    },
-    "Lenguajes": {
-      "name": "Lenguajes Formales, Autómatas y Computabilidad",
-      "calname": "Lenguajes",
-      "hours": [{
-          "duration": 1,
-          "start": 10,
-          "day": 3
-        },
-        {
-          "duration": 2,
-          "start": 10,
-          "day": 4
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    },
-    "PPS": {
-      "name": "Programación para Sistemas",
-      "calname": "PPS",
-      "hours": [{
-        "duration": 2,
-        "start": 10,
-        "day": 5
-      }],
-      "ects": 3,
-      "aula": 5002
-    },
-    "Algorítmica": {
-      "name": "Algorítmica Numérica",
-      "calname": "Algorítmica",
-      "hours": [{
-          "duration": 2,
-          "start": 10,
-          "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 8,
-          "day": 4
-        },
-        {
-          "duration": 1,
-          "start": 7,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    },
-    "DiscretaII": {
-      "name": "Matemática Discreta II",
-      "calname": "DiscretaII",
-      "hours": [{
-        "duration": 2,
-        "start": 8,
-        "day": 2
-      }, {
-        "duration": 1,
-        "start": 7,
-        "day": 3
-      }],
-      "ects": 3,
-      "aula": 6205
-    },
-    "EdC": {
-      "name": "Estructura de Computadores",
-      "calname": "Estructura",
-      "hours": [{
-          "duration": 2,
-          "start": 8,
-          "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 10,
-          "day": 2
-        },
-        {
-          "duration": 1,
-          "start": 7,
-          "day": 4
-        }
-      ],
-      "ects": 6,
-      "aula": 5002
-    }
-  },
-  "5S1M": {
-    "color": "rgba(0, 255, 0, 0.3)",
-    "SSOO": {
-      "name": "Sistemas Operativos",
-      "calname": "Sistemas Operativos",
-      "hours": [{
-          "duration": 2,
-          "start": 3,
-          "day": 2
-        },
-        {
-          "duration": 1,
-          "start": 5,
-          "day": 2
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5102
-    },
-    "IA": {
-      "name": "Inteligencia Artificial",
-      "calname": "IA",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 4
-        }
-      ],
-      "ects": 6,
-      "aula": 5102
-    },
-    "Seguridad": {
-      "name": "Seguridad de las Tecnologías de la Información",
-      "calname": "Seguridad",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 3
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5102
-    },
-    "IPO": {
-      "name": "Interacción Persona Ordenador",
-      "calname": "IPO",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 2
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 3
-        }
-      ],
-      "ects": 6,
-      "aula": 5102
-    },
-    "PdL": {
-      "name": "Procesadores de Lenguajes",
-      "calname": "PdL",
-      "hours": [{
-          "duration": 1,
-          "start": 5,
-          "day": 3
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 4
-        }
-      ],
-      "ects": 3,
-      "aula": 5102
-    }
-  },
-  "5S2M": {
-    "color": "rgba(0, 255, 0, 0.3)",
-    "SSOO": {
-      "name": "Sistemas Operativos",
-      "calname": "Sistemas Operativos",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 2
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 3
-        },
-        {
-          "duration": 1,
-          "start": 5,
-          "day": 3
-        }
-      ],
-      "ects": 6,
-      "aula": 5102
-    },
-    "IA": {
-      "name": "Inteligencia Artificial",
-      "calname": "IA",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 3
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 4
-        }
-      ],
-      "ects": 6,
-      "aula": 5102
-    },
-    "Seguridad": {
-      "name": "Seguridad de las Tecnologías de la Información",
-      "calname": "Seguridad",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 1,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5102
-    },
-    "IPO": {
-      "name": "Interacción Persona Ordenador",
-      "calname": "IPO",
-      "hours": [{
-          "duration": 2,
-          "start": 1,
-          "day": 2
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 3
-        }
-      ],
-      "ects": 6,
-      "aula": 5102
-    },
-    "PdL": {
-      "name": "Procesadores de Lenguajes",
-      "calname": "PdL",
-      "hours": [{
-          "duration": 1,
-          "start": 3,
-          "day": 2
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 4
-        }
-      ],
-      "ects": 3,
-      "aula": 5102
-    }
-  },
-  "5S3T": {
-    "color": "rgba(0, 255, 60, 0.3)",
-    "SSOO": {
-      "name": "Sistemas Operativos",
-      "calname": "Sistemas Operativos",
-      "hours": [{
-          "duration": 2,
-          "start": 10,
-          "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 8,
-          "day": 4
-        },
-        {
-          "duration": 1,
-          "start": 10,
-          "day": 4
-        }
-      ],
-      "ects": 6,
-      "aula": 5102
-    },
-    "IA": {
-      "name": "Inteligencia Artificial",
-      "calname": "IA",
-      "hours": [{
-          "duration": 2,
-          "start": 8,
-          "day": 2
-        },
-        {
-          "duration": 2,
-          "start": 8,
-          "day": 3
-        }
-      ],
-      "ects": 6,
-      "aula": 5102
-    },
-    "Seguridad": {
-      "name": "Seguridad de las Tecnologías de la Información",
-      "calname": "Seguridad",
-      "hours": [{
-          "duration": 2,
-          "start": 8,
-          "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 8,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5102
-    },
-    "IPO": {
-      "name": "Interacción Persona Ordenador",
-      "calname": "IPO",
-      "hours": [{
-          "duration": 2,
-          "start": 10,
-          "day": 1
-        },
-        {
-          "duration": 2,
-          "start": 8,
-          "day": 4
-        }
-      ],
-      "ects": 6,
-      "aula": 5102
-    },
-    "PdL": {
-      "name": "Procesadores de Lenguajes",
-      "calname": "PdL",
-      "hours": [{
-          "duration": 2,
-          "start": 10,
-          "day": 3
         },
         {
           "duration": 1,
           "start": 11,
-          "day": 4
+          "day": 3
         }
       ],
-      "ects": 3,
-      "aula": 5102
+      "ects": 6
     }
   },
-  "OPT3": {
-    "color": "rgba(0, 255, 120, 0.3)",
-    "SSOpto": {
-      "name": "Sistemas Optoelectrónicos",
-      "calname": "SSOpto",
-      "hours": [{
-        "duration": 2,
-        "start": 3,
-        "day": 1
-      }],
-      "ects": 3,
-      "aula": 6101
-    },
-    "ANI": {
-      "name": "Aplicaciones Numéricas de la Informática",
-      "calname": "Aplicaciones Numéricas",
-      "hours": [{
-        "duration": 2,
-        "start": 3,
-        "day": 1
-      }],
-      "ects": 3,
-      "aula": 5102
-    },
-    "MW": {
-      "name": "Middleware",
-      "calname": "Middleware",
-      "hours": [{
-        "duration": 2,
-        "start": 6,
-        "day": 3
-      }],
-      "ects": 3,
-      "aula": 6305
-    },
-    "Inglés": {
-      "name": "Building up Communicative Skills",
-      "calname": "Inglés",
-      "hours": [{
-        "duration": 2,
-        "start": 6,
-        "day": 3
-      }],
-      "ects": 3,
-      "aula": 6101
-    },
-    "II": {
-      "name": "Informática Industrial",
-      "calname": "Inf. Industrial",
-      "hours": [{
-          "duration": 2,
-          "start": 10,
-          "day": 2
-        },
-        {
-          "duration": 2,
-          "start": 6,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 5102
-    },
-    "ED": {
-      "name": "Ecuaciones Diferenciales",
-      "calname": "Ecs. Diff.",
-      "hours": [{
-          "duration": 2,
-          "start": 10,
-          "day": 2
-        },
-        {
-          "duration": 2,
-          "start": 6,
-          "day": 4
-        }
-      ],
-
-      "ects": 6,
-      "aula": 6101
-    },
-    "IO": {
-      "name": "Investigación Operativa",
-      "calname": "Inv. Operativa",
-      "hours": [{
-          "duration": 2,
-          "start": 6,
-          "day": 4
-        },
-        {
-          "duration": 2,
-          "start": 6,
-          "day": 5
-        }
-      ],
-      "ects": 6,
-      "aula": 6102
-    }
-  },
-  "7S1T": {
+  "8F1T": {
     "color": "rgba(0, 255, 180, 0.3)",
     "GPTI": {
       "name": "Gestión de Procesos de Tecnologías de la información",
       "calname": "GPTI",
       "hours": [{
           "duration": 1,
-          "start": 8,
-          "day": 3
+          "start": 7,
+          "day": 1
         },
         {
           "duration": 2,
@@ -1719,12 +483,12 @@ var cursos = {
       "name": "Ingeniería del Software II",
       "calname": "IS2",
       "hours": [{
-          "duration": 2,
-          "start": 7,
+          "duration": 1,
+          "start": 8,
           "day": 1
         },
         {
-          "duration": 1,
+          "duration": 2,
           "start": 7,
           "day": 3
         }
@@ -1733,16 +497,16 @@ var cursos = {
       "aula": 6105
     },
     "EPAC": {
-      "name": "Inglés",
-      "calname": "Inglés",
+      "name": "English for Professional and Academic Communication ",
+      "calname": "EPAC",
       "hours": [{
           "duration": 2,
-          "start": 7,
+          "start": 8,
           "day": 2
         },
         {
           "duration": 2,
-          "start": 7,
+          "start": 8,
           "day": 4
         }
       ],
@@ -1752,99 +516,142 @@ var cursos = {
   },
   "OPT4": {
     "color": "rgba(0, 255, 240, 0.3)",
-    "SSPP": {
-      "name": "Sistemas de Planificación",
-      "calname": "SSPP",
-      "hours": [{
-        "duration": 2,
-        "start": 3,
-        "day": 1
-      }],
-      "ects": 3,
-      "aula": 6105
-    },
-    "TCI": {
-      "name": "Tecnologías de Comunicación Inalámbrica",
-      "calname": "TCI",
-      "hours": [{
-        "duration": 2,
-        "start": 3,
-        "day": 3
-      }],
-      "ects": 3,
-      "aula": 6102
-    },
-    "RF": {
-      "name": "Reconocimiento de Formas",
-      "calname": "RF",
-      "hours": [{
-        "duration": 2,
-        "start": 3,
-        "day": 4
-      }],
-      "ects": 3,
-      "aula": 6105
-    },
-    "WSLD": {
-      "name": "Web Semántica y Linked Data",
-      "calname": "Web Sem. y LD",
+    "TC": {
+      "name": "Computabilidad: Fundamentos y Aplicaciones",
+      "calname": "TC",
       "hours": [{
         "duration": 2,
         "start": 9,
         "day": 1
       }],
       "ects": 3,
-      "aula": 6306
+      "aula": 0
     },
-    "NT": {
-      "name": "Nanotecnología",
-      "calname": "NT",
+    "ADW": {
+      "name": "Arquitectura del Data Warehouse",
+      "calname": "ADW",
       "hours": [{
         "duration": 2,
         "start": 9,
+        "day": 1
+      }],
+      "ects": 3
+    },
+    "AlGe": {
+      "name": "Algoritmos Geométricos",
+      "calname": "AlGe",
+      "hours": [{
+        "duration": 2,
+        "start": 6,
         "day": 2
       }],
       "ects": 3,
-      "aula": 6306
+      "aula": 0
     },
-    "TCC": {
-      "name": "Técnicas de Computación Científica",
-      "calname": "TCC",
+    "MdD": {
+      "name": "Minería de Datos",
+      "calname": "MdD",
       "hours": [{
         "duration": 2,
-        "start": 9,
-        "day": 4
+        "start": 6,
+        "day": 2
       }],
       "ects": 3,
-      "aula": 6105
+      "aula": 0
     },
-    "ASI": {
-      "name": "Administración de Sistemas Informáticos",
-      "calname": "ASI",
+    "RPC": {
+      "name": "Robótica y Percepción Computacional",
+      "calname": "RPC",
+      "hours": [{
+        "duration": 2,
+        "start": 10,
+        "day": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "CAR": {
+      "name": "Computación de Alto Rendimiento",
+      "calname": "CAR",
+      "hours": [{
+        "duration": 2,
+        "start": 10,
+        "day": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "SDFC": {
+      "name": "Sistemas Dinámicos, Fractales y Caos",
+      "calname": "SDFC",
+      "hours": [{
+          "duration": 2,
+          "start": 5,
+          "day": 3
+        },
+        {
+          "duration": 2,
+          "start": 6,
+          "day": 4
+        }
+      ],
+      "ects": 6,
+      "aula": 0
+    },
+    "G3DIG": {
+      "name": "Geometría 3D para informática Gráfica",
+      "calname": "G3DIG",
       "hours": [{
         "duration": 2,
         "start": 9,
         "day": 3
       }],
-      "ects": 6,
-      "aula": 6105
-    },
-    "TCISCO": {
-      "name": "Tecnologías de red CISCO: CCNA",
-      "calname": "TCISCO",
-      "hours": [{
-          "duration": 2,
-          "start": 3,
-          "day": 2
-        },
-        {
-          "duration": 2,
-          "start": 3,
-          "day": 5
-        }
-      ],
       "ects": 3,
-      "aula": "Artá"
+      "aula": 0
+    },
+    "ABV": {
+      "name": "Aplicaciones de la Biometría de la Voz",
+      "calname": "ABV",
+      "hours": [{
+        "duration": 2,
+        "start": 9,
+        "day": 3
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "I2T": {
+      "name": "Ingeniería de Integración Tecnológica",
+      "calname": "I2T",
+      "hours": [{
+        "duration": 2,
+        "start": 10,
+        "day": 4
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "FC": {
+      "name": "Fotografía Computacional",
+      "calname": "FC",
+      "hours": [{
+        "duration": 2,
+        "start": 5,
+        "day": 5
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "DAW": {
+      "name": "Diseño de Aplicaciones Web",
+      "calname": "DAW",
+      "hours": [{
+        "duration": 2,
+        "start": 9,
+        "day": 5
+      }],
+      "ects": 3,
+      "aula": 0
     }
   }
 }
@@ -1980,7 +787,7 @@ function redrawCanvas() {
       canvasctx.stroke();
       canvasctx.fillStyle = "black";
       canvasctx.strokeStyle = "black";
-      canvasctx.fillText(c[asignatura].calname == "undefined" ? c[asignatura].name : c[asignatura].calname, blockleft + blockwidth * hours[j]["duration"] / 2, blockup + lineHeight);
+      canvasctx.fillText((!c[asignatura].calname || (c[asignatura].calname == "undefined")) ? c[asignatura].name : c[asignatura].calname, blockleft + blockwidth * hours[j]["duration"] / 2, blockup + lineHeight);
       if (document.getElementById("showGroup").checked || document.getElementById("showClass").checked) {
         canvasctx.fillText("( " + (document.getElementById("showGroup").checked ? curso : "") + (document.getElementById("showGroup").checked && document.getElementById("showClass").checked ? " / " : "") + (document.getElementById("showClass").checked ? c[asignatura]["aula"] : "") + " )", blockleft + blockwidth * hours[j]["duration"] / 2, blockup + blockheight / 1.2);
       }

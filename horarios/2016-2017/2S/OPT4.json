@@ -1,0 +1,119 @@
+{
+  "OPT4": {
+    "color": "rgba(0, 255, 240, 0.3)",
+    "TC": {
+      "name": "Teoría de la Computabilidad",
+      "hours": [{
+        "duration": 2,
+        "start": 9,
+        "day": 1
+      }],
+      "ects": 3
+    },
+    "ADW": {
+      "name": "Arquitectura del Data Warehouse",
+      "hours": [{
+        "duration": 2,
+        "start": 9,
+        "day": 1
+      }],
+      "ects": 3
+    },
+    "AlGe": {
+      "name": "Algoritmos Geométricos",
+      "hours": [{
+        "duration": 2,
+        "start": 6,
+        "day": 2
+      }],
+      "ects": 3
+    },
+    "MdD": {
+      "name": "Minería de Datos",
+      "hours": [{
+        "duration": 2,
+        "start": 6,
+        "day": 2
+      }],
+      "ects": 3
+    },
+    "RPC": {
+      "name": "Robótica y Percepción Computacional",
+      "hours": [{
+        "duration": 2,
+        "start": 10,
+        "day": 2
+      }],
+      "ects": 3
+    },
+    "CAR": {
+      "name": "Computación de Alto Rendimiento",
+      "hours": [{
+        "duration": 2,
+        "start": 10,
+        "day": 2
+      }],
+      "ects": 3
+    },
+    "SDFC": {
+      "name": "Sistemas Dinámicos, Fractales y Caos",
+      "hours": [{
+          "duration": 2,
+          "start": 5,
+          "day": 3
+        },
+        {
+          "duration": 2,
+          "start": 6,
+          "day": 4
+        }
+      ],
+      "ects": 6
+    },
+    "G3DIG": {
+      "name": "Geometría 3D para informática Gráfica",
+      "hours": [{
+        "duration": 2,
+        "start": 9,
+        "day": 3
+      }],
+      "ects": 3
+    },
+    "ABV": {
+      "name": "Aplicaciones de la Biometría de la Voz",
+      "hours": [{
+        "duration": 2,
+        "start": 9,
+        "day": 3
+      }],
+      "ects": 3
+    },
+    "I2T": {
+      "name": "Ingeniería de Integración Tecnológica",
+      "hours": [{
+        "duration": 2,
+        "start": 10,
+        "day": 4
+      }],
+      "ects": 3
+    },
+    "FC": {
+      "name": "Fotografía Computacional",
+      "hours": [{
+        "duration": 2,
+        "start": 5,
+        "day": 5
+      }],
+      "ects": 3
+    },
+    "DAW": {
+      "name": "Diseño de Aplicaciones Web",
+      "hours": [{
+        "duration": 2,
+        "start": 9,
+        "day": 5
+      }],
+      "ects": 3
+    }
+  }
+}
