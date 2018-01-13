@@ -1,0 +1,100 @@
+{
+  "5T": {
+		"color": "rgba(255, 240, 0, 0.3)",
+		"Álgebra": {
+			"name": "Álgebra Lineal",
+			"calname": "Álgebra",
+			"hours": [{
+					"duration": 2,
+					"start": 7,
+					"day": 1
+				},
+				{
+					"duration": 2,
+					"start": 9,
+					"day": 3
+				}
+			],
+			"ects": 6,
+			"aula": 5001
+		},
+		"Lógica": {
+			"name": "Lógica",
+			"calname": "Lógica",
+			"hours": [{
+					"duration": 2,
+					"start": 9,
+					"day": 1
+				},
+				{
+					"duration": 2,
+					"start": 8,
+					"day": 4
+				}
+			],
+			"ects": 6,
+			"aula": 6305
+		},
+		"FFyTI": {
+			"name": "Fundamentos Físicos y Tecnológicos de la Informática",
+			"calname": "FFyTI",
+			"hours": [{
+					"duration": 1,
+					"start": 11,
+					"day": 1
+				},
+				{
+					"duration": 2,
+					"start": 9,
+					"day": 2
+				},
+				{
+					"duration": 2,
+					"start": 7,
+					"day": 5
+				}
+			],
+			"ects": 6,
+			"aula": 5001
+		},
+		"DiscretaI": {
+			"name": "Matemática Discreta I",
+			"calname": "Matemática Discreta I",
+			"hours": [{
+					"duration": 2,
+					"start": 7,
+					"day": 2
+				},
+				{
+					"duration": 1,
+					"start": 11,
+					"day": 3
+				},
+				{
+					"duration": 2,
+					"start": 9,
+					"day": 5
+				}
+			],
+			"ects": 6,
+			"aula": 5001
+		},
+		"ProgI": {
+			"name": "Programación I",
+			"calname": "Programación I",
+			"hours": [{
+					"duration": 2,
+					"start": 7,
+					"day": 3
+				},
+				{
+					"duration": 2,
+					"start": 10,
+					"day": 4
+				}
+			],
+			"ects": 6,
+			"aula": 5001
+		}
+	}
+}
