@@ -489,7 +489,7 @@ var cursos = {
           "day": 3,
           "start": 5,
           "duration": 1,
-          "info": "(semanas 1-4 y 6)"
+          "info": "semanas 1-4 y 6"
         },
         {
           "day": 4,
@@ -507,7 +507,7 @@ var cursos = {
           "day": 1,
           "start": 5,
           "duration": 1,
-          "info": "(semanas 1-4 y 6)"
+          "info": "semanas 1-4 y 6"
         },
         {
           "day": 3,
@@ -1411,10 +1411,15 @@ function redrawCanvas() {
       canvasctx.stroke();
       canvasctx.fillStyle = "black";
       canvasctx.strokeStyle = "black";
-      canvasctx.fillText((!c[asignatura].calname || (c[asignatura].calname == "undefined")) ? c[asignatura].name : c[asignatura].calname, blockleft + blockwidth * hours[j]["duration"] / 2, blockup + lineHeight);
+
+      var div_info = 1
       if (hours[j].info) {
-        canvasctx.fillText(hours[j].info, blockleft + blockwidth * hours[j]["duration"] / 2, blockup + blockheight / 1.8);
+        canvasctx.fillText("("+hours[j].info+")", blockleft + blockwidth * hours[j]["duration"] / 2, blockup + blockheight / 1.8);
+        div_info = 1.7
       }
+
+      canvasctx.fillText((!c[asignatura].calname || (c[asignatura].calname == "undefined")) ? c[asignatura].name : c[asignatura].calname, blockleft + blockwidth * hours[j]["duration"] / 2, blockup + lineHeight / div_info);
+
       if (document.getElementById("showGroup").checked || document.getElementById("showClass").checked) {
         canvasctx.fillText("( " + (document.getElementById("showGroup").checked ? curso : "") + (document.getElementById("showGroup").checked && document.getElementById("showClass").checked ? " / " : "") + (document.getElementById("showClass").checked ? c[asignatura]["aula"] : "") + " )", blockleft + blockwidth * hours[j]["duration"] / 2, blockup + blockheight / 1.2);
       }
