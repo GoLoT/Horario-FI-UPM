@@ -1,0 +1,141 @@
+{
+  "4F2M": {
+    "color": "rgba(120, 255, 0, 0.3)",
+    "AdC": {
+      "name": "Arquitectura de Computadores",
+      "calname": "AdC",
+      "hours": [{
+          "day": 1,
+          "start": 1,
+          "duration": 1,
+          "info": "semanas 1-4"
+        },
+        {
+          "day": 4,
+          "start": 1,
+          "duration": 2
+        },
+        {
+          "day": 5,
+          "start": 3,
+          "duration": 2
+        }
+      ],
+      "ects": 6,
+      "aula": 0
+    },
+    "Concu": {
+      "name": "Concurrencia",
+      "calname": "Concu",
+      "hours": [{
+          "day": 1,
+          "start": 2,
+          "duration": 1
+        },
+        {
+          "day": 2,
+          "start": 5,
+          "duration": 1
+        }
+      ],
+      "ects": 3,
+      "aula": 0
+    },
+    "SSOO": {
+      "name": "Sistemas Operativos (alumnos antes de 2014-15)",
+      "calname": "SSOO",
+      "hours": [{
+          "day": 1,
+          "start": 3,
+          "duration": 2
+        },
+        {
+          "day": 3,
+          "start": 1,
+          "duration": 2,
+        },
+        {
+          "day": 4,
+          "start": 1,
+          "duration": 1,
+          "info": "semanas 1-4"
+        }
+      ],
+      "ects": 3,
+      "aula": 0
+    },
+    "FEyAE": {
+      "name": "Fundamentos de Economía y Administración de Empresas",
+      "calname": "FEyAE",
+      "hours": [{
+        "day": 1,
+        "start": 3,
+        "duration": 2,
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "Redes": {
+      "name": "Redes de Computadores",
+      "calname": "Redes",
+      "hours": [{
+          "day": 1,
+          "start": 5,
+          "duration": 1,
+          "info": "semanas 1-4 y 6"
+        },
+        {
+          "day": 2,
+          "start": 3,
+          "duration": 2
+        },
+        {
+          "day": 5,
+          "start": 1,
+          "duration": 2
+        }
+      ],
+      "ects": 6,
+      "aula": 0
+    },
+    "PyEII": {
+      "name": "Probabilidad y Estadística II",
+      "calname": "PyEII",
+      "hours": [{
+        "day": 2,
+        "start": 1,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "BBDD": {
+      "name": "Base de Datos",
+      "calname": "BBDD",
+      "hours": [{
+          "day": 3,
+          "start": 3,
+          "duration": 2
+        },
+        {
+          "day": 4,
+          "start": 3,
+          "duration": 2
+        }
+      ],
+      "ects": 6,
+      "aula": 0
+    },
+    "FGTIE": {
+      "name": "Fundamentos de Gestión de Tecnologías de la Información en la Empresa",
+      "calname": "FGTIE",
+      "hours": [{
+        "day": 3,
+        "start": 1,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    }
+  }
+}

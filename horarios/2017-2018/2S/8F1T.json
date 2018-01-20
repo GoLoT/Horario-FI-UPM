@@ -5,14 +5,14 @@
       "name": "Gestión de Procesos de Tecnologías de la información",
       "calname": "GPTI",
       "hours": [{
-          "duration": 1,
+          "day": 1,
           "start": 7,
-          "day": 1
+          "duration": 1
         },
         {
-          "duration": 2,
+          "day": 5,
           "start": 7,
-          "day": 5
+          "duration": 2
         }
       ],
       "ects": 6,
@@ -22,14 +22,14 @@
       "name": "Ingeniería del Software II",
       "calname": "IS2",
       "hours": [{
-          "duration": 1,
+          "day": 1,
           "start": 8,
-          "day": 1
+          "duration": 1
         },
         {
-          "duration": 2,
+          "day": 3,
           "start": 7,
-          "day": 3
+          "duration": 2
         }
       ],
       "ects": 6,
@@ -39,14 +39,14 @@
       "name": "English for Professional and Academic Communication ",
       "calname": "EPAC",
       "hours": [{
-          "duration": 2,
+          "day": 2,
           "start": 8,
-          "day": 2
+          "duration": 2
         },
         {
-          "duration": 2,
+          "day": 4,
           "start": 8,
-          "day": 4
+          "duration": 2
         }
       ],
       "ects": 6,

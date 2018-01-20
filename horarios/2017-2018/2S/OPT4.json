@@ -5,9 +5,9 @@
       "name": "Computabilidad: Fundamentos y Aplicaciones",
       "calname": "TC",
       "hours": [{
-        "duration": 2,
+        "day": 1,
         "start": 9,
-        "day": 1
+        "duration": 2
       }],
       "ects": 3,
       "aula": 0
@@ -16,19 +16,20 @@
       "name": "Arquitectura del Data Warehouse",
       "calname": "ADW",
       "hours": [{
-        "duration": 2,
+        "day": 1,
         "start": 9,
-        "day": 1
+        "duration": 2
       }],
-      "ects": 3
+      "ects": 3,
+      "aula": 0
     },
     "AlGe": {
       "name": "Algoritmos Geométricos",
       "calname": "AlGe",
       "hours": [{
-        "duration": 2,
+        "day": 2,
         "start": 6,
-        "day": 2
+        "duration": 2
       }],
       "ects": 3,
       "aula": 0
@@ -37,9 +38,9 @@
       "name": "Minería de Datos",
       "calname": "MdD",
       "hours": [{
-        "duration": 2,
+        "day": 2,
         "start": 6,
-        "day": 2
+        "duration": 2
       }],
       "ects": 3,
       "aula": 0
@@ -48,9 +49,9 @@
       "name": "Robótica y Percepción Computacional",
       "calname": "RPC",
       "hours": [{
-        "duration": 2,
+        "day": 2,
         "start": 10,
-        "day": 2
+        "duration": 2
       }],
       "ects": 3,
       "aula": 0
@@ -59,9 +60,9 @@
       "name": "Computación de Alto Rendimiento",
       "calname": "CAR",
       "hours": [{
-        "duration": 2,
+        "day": 2,
         "start": 10,
-        "day": 2
+        "duration": 2
       }],
       "ects": 3,
       "aula": 0
@@ -70,14 +71,14 @@
       "name": "Sistemas Dinámicos, Fractales y Caos",
       "calname": "SDFC",
       "hours": [{
-          "duration": 2,
+          "day": 3,
           "start": 5,
-          "day": 3
+          "duration": 2
         },
         {
-          "duration": 2,
+          "day": 4,
           "start": 6,
-          "day": 4
+          "duration": 2
         }
       ],
       "ects": 6,
@@ -87,9 +88,9 @@
       "name": "Geometría 3D para informática Gráfica",
       "calname": "G3DIG",
       "hours": [{
-        "duration": 2,
+        "day": 3,
         "start": 9,
-        "day": 3
+        "duration": 2
       }],
       "ects": 3,
       "aula": 0
@@ -98,9 +99,9 @@
       "name": "Aplicaciones de la Biometría de la Voz",
       "calname": "ABV",
       "hours": [{
-        "duration": 2,
+        "day": 3,
         "start": 9,
-        "day": 3
+        "duration": 2
       }],
       "ects": 3,
       "aula": 0
@@ -109,9 +110,9 @@
       "name": "Ingeniería de Integración Tecnológica",
       "calname": "I2T",
       "hours": [{
-        "duration": 2,
+        "day": 4,
         "start": 10,
-        "day": 4
+        "duration": 2
       }],
       "ects": 3,
       "aula": 0
@@ -120,9 +121,9 @@
       "name": "Fotografía Computacional",
       "calname": "FC",
       "hours": [{
-        "duration": 2,
+        "day": 5,
         "start": 5,
-        "day": 5
+        "duration": 2
       }],
       "ects": 3,
       "aula": 0
@@ -131,9 +132,9 @@
       "name": "Diseño de Aplicaciones Web",
       "calname": "DAW",
       "hours": [{
-        "duration": 2,
+        "day": 5,
         "start": 9,
-        "day": 5
+        "duration": 2
       }],
       "ects": 3,
       "aula": 0

@@ -1,0 +1,80 @@
+{
+  "OPT3": {
+    "color": "rgba(0, 255, 120, 0.3)",
+    "PDDS": {
+      "name": "Procesamiento Digital de la Señal",
+      "hours": [{
+          "duration": 2,
+          "start": 6,
+          "day": 1
+        },
+        {
+          "duration": 2,
+          "start": 6,
+          "day": 3
+        }
+      ],
+      "ects": 6
+    },
+    "SSII": {
+      "name": "Sistemas Inteligentes",
+      "hours": [{
+          "duration": 2,
+          "start": 6,
+          "day": 1
+        },
+        {
+          "duration": 2,
+          "start": 6,
+          "day": 3
+        }
+      ],
+      "ects": 6
+    },
+    "ATID": {
+      "name": "Algoritmos Topológicos para Imágenes Digitales",
+      "hours": [{
+        "duration": 2,
+        "start": 1,
+        "day": 2
+      }],
+      "ects": 3
+    },
+    "TIC": {
+      "name": "Teoría de la Información y de la Codificación",
+      "hours": [{
+        "duration": 2,
+        "start": 6,
+        "day": 2
+      }],
+      "ects": 3
+    },
+    "CCPP": {
+      "name": "Computadores Personales",
+      "hours": [{
+        "duration": 2,
+        "start": 6,
+        "day": 2
+      }],
+      "ects": 3
+    },
+    "TDL": {
+      "name": "Traductores de Lenguajes",
+      "hours": [{
+        "duration": 2,
+        "start": 6,
+        "day": 4
+      }],
+      "ects": 3
+    },
+    "AN2": {
+      "name": "ALgorítmica Numérica II",
+      "hours": [{
+        "duration": 2,
+        "start": 6,
+        "day": 4
+      }],
+      "ects": 3
+    }
+  }
+}

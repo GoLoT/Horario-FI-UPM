@@ -1,0 +1,83 @@
+{
+  "OPT3": {
+    "color": "rgba(0, 255, 120, 0.3)",
+    "PDDS": {
+      "name": "Procesamiento Digital de la Señal",
+      "calname": "PDDS",
+      "hours": [{
+          "day": 1,
+          "start": 6,
+          "duration": 2
+        },
+        {
+          "day": 3,
+          "start": 6,
+          "duration": 2
+        }
+      ],
+      "ects": 6,
+      "aula": 0
+    },
+    "SSII": {
+      "name": "Sistemas Inteligentes",
+      "calname": "SSII",
+      "hours": [{
+          "day": 1,
+          "start": 6,
+          "duration": 2
+        },
+        {
+          "day": 3,
+          "start": 6,
+          "duration": 2
+        }
+      ],
+      "ects": 6,
+      "aula": 0
+    },
+    "EPA": {
+      "name": "Español Profesional y Académico",
+      "calname": "EPA",
+      "hours": [{
+        "day": 2,
+        "start": 6,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "TDL": {
+      "name": "Traductores de Lenguajes",
+      "calname": "TDL",
+      "hours": [{
+        "day": 4,
+        "start": 6,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "AN2": {
+      "name": "ALgorítmica Numérica II",
+      "calname": "AN2",
+      "hours": [{
+        "day": 4,
+        "start": 6,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "CCPP": {
+      "name": "Computadores Personales",
+      "calname": "CCPP",
+      "hours": [{
+        "day": 5,
+        "start": 6,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    }
+  }
+}

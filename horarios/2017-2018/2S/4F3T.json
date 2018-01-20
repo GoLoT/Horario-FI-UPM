@@ -1,0 +1,118 @@
+{
+  "4F3T": {
+    "color": "rgba(60, 255, 0, 0.3)",
+    "AdC": {
+      "name": "Arquitectura de Computadores",
+      "calname": "AdC",
+      "hours": [{
+          "day": 1,
+          "start": 7,
+          "duration": 1,
+          "info": "semanas 1-4"
+        },
+        {
+          "day": 2,
+          "start": 8,
+          "duration": 2
+        },
+        {
+          "day": 4,
+          "start": 8,
+          "duration": 2
+        }
+      ],
+      "ects": 6,
+      "aula": 0
+    },
+    "Redes": {
+      "name": "Redes de Computadores",
+      "calname": "Redes",
+      "hours": [{
+          "day": 1,
+          "start": 8,
+          "duration": 2
+        },
+        {
+          "day": 2,
+          "start": 7,
+          "duration": 1,
+          "info": "semanas 1-4 y 6"
+        },
+        {
+          "day": 3,
+          "start": 10,
+          "duration": 2
+        }
+      ],
+      "ects": 6,
+      "aula": 0
+    },
+    "FEyAE": {
+      "name": "Fundamentos de Economía y Administración de Empresas",
+      "calname": "FEyAE",
+      "hours": [{
+        "day": 1,
+        "start": 10,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "Concu": {
+      "name": "Concurrencia",
+      "calname": "Concu",
+      "hours": [{
+          "day": 2,
+          "start": 10,
+          "duration": 1
+        },
+        {
+          "day": 5,
+          "start": 7,
+          "duration": 1
+        }
+      ],
+      "ects": 3,
+      "aula": 0
+    },
+    "PyEII": {
+      "name": "Probabilidad y Estadística II",
+      "calname": "PyEII",
+      "hours": [{
+        "day": 3,
+        "start": 8,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "BBDD": {
+      "name": "Base de Datos",
+      "calname": "BBDD",
+      "hours": [{
+          "day": 4,
+          "start": 10,
+          "duration": 2
+        },
+        {
+          "day": 5,
+          "start": 10,
+          "duration": 2
+        }
+      ],
+      "ects": 6,
+      "aula": 0
+    },
+    "FGTIE": {
+      "name": "Fundamentos de Gestión de Tecnologías de la Información en la Empresa",
+      "calname": "FGTIE",
+      "hours": [{
+        "day": 5,
+        "start": 8,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    }
+  }
+}

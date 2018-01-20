@@ -1,0 +1,86 @@
+{
+  "6F1M": {
+    "color": "rgba(0, 255, 0, 0.3)",
+    "SSDist": {
+      "name": "Sistemas Distribuidos",
+      "calname": "SSDist",
+      "hours": [{
+          "day": 1,
+          "start": 1,
+          "duration": 2
+        },
+        {
+          "day": 4,
+          "start": 3,
+          "duration": 2
+        }
+      ],
+      "ects": 6,
+      "aula": 0
+    },
+    "IS1": {
+      "name": "Ingeniería de Software I",
+      "calname": "IS1",
+      "hours": [{
+          "day": 1,
+          "start": 3,
+          "duration": 2
+        },
+        {
+          "day": 3,
+          "start": 1,
+          "duration": 2
+        }
+      ],
+      "ects": 6,
+      "aula": 0
+    },
+    "PII": {
+      "name": "Proyecto de Instalación Informática",
+      "calname": "PII",
+      "hours": [{
+        "day": 2,
+        "start": 1,
+        "duration": 2
+      }],
+      "ects": 3,
+      "aula": 0
+    },
+    "SOS": {
+      "name": "Sistemas Orientados a Servicios",
+      "calname": "SOS",
+      "hours": [{
+          "day": 2,
+          "start": 3,
+          "duration": 2
+        },
+        {
+          "day": 3,
+          "start": 3,
+          "duration": 2
+        }
+      ],
+      "ects": 6,
+      "aula": 0
+    },
+    "PDLR": {
+      "name": "Programación Declarativa: Lógica y Restricciones",
+      "calname": "PDLR",
+      "hours": [
+        {
+          "day": 2,
+          "start": 5,
+          "duration": 1,
+          "info": "semanas 1-6"
+        },
+        {
+          "day": 4,
+          "start": 1,
+          "duration": 2
+        }
+      ],
+      "ects": 3,
+      "aula": 0
+    }
+  }
+}
