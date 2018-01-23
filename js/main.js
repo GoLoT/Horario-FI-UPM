@@ -262,7 +262,7 @@ var cursos = {
     },
     "ProgII": {
       "name": "Programación II",
-      "calname": "ProgII",
+      "calname": "Prog II",
       "hours": [{
           "day": 4,
           "start": 3,
