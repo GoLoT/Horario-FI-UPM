@@ -18,9 +18,9 @@ var cursos = {
       "ects": 6,
       "aula": 0
     },
-    "PYE1": {
+    "PyE1": {
       "name": "Probabilidad y Estadística I",
-      "calname": "PYE1",
+      "calname": "PyE1",
       "hours": [{
           "day": 4,
           "start": 1,
@@ -54,7 +54,7 @@ var cursos = {
     },
     "Calc": {
       "name": "Cálculo",
-      "calname": "Calc",
+      "calname": "Cálculo",
       "hours": [{
           "day": 2,
           "start": 3,
@@ -76,7 +76,7 @@ var cursos = {
     },
     "ProgII": {
       "name": "Programación II",
-      "calname": "ProgII",
+      "calname": "Prog II",
       "hours": [{
           "day": 2,
           "start": 1,
@@ -111,9 +111,9 @@ var cursos = {
       "ects": 6,
       "aula": 0
     },
-    "PYE1": {
+    "PyE1": {
       "name": "Probabilidad y Estadística I",
-      "calname": "PYE1",
+      "calname": "PyE1",
       "hours": [{
           "day": 4,
           "start": 3,
@@ -147,7 +147,7 @@ var cursos = {
     },
     "Calc-I": {
       "name": "Cálculo [Inglés o Español]",
-      "calname": "Calc-I",
+      "calname": "Cálculo-I",
       "hours": [{
           "day": 2,
           "start": 1,
@@ -169,7 +169,7 @@ var cursos = {
     },
     "ProgII": {
       "name": "Programación II",
-      "calname": "ProgII",
+      "calname": "Prog II",
       "hours": [{
           "day": 2,
           "start": 3,
@@ -204,9 +204,9 @@ var cursos = {
       "ects": 6,
       "aula": 0
     },
-    "PYE1": {
+    "PyE1": {
       "name": "Probabilidad y Estadística I",
-      "calname": "PYE1",
+      "calname": "PyE1",
       "hours": [{
           "day": 2,
           "start": 1,
@@ -240,7 +240,7 @@ var cursos = {
     },
     "Calc": {
       "name": "Cálculo",
-      "calname": "Calc",
+      "calname": "Cálculo",
       "hours": [{
           "day": 1,
           "start": 3,
@@ -297,9 +297,9 @@ var cursos = {
       "ects": 6,
       "aula": 0
     },
-    "PYE1": {
+    "PyE1": {
       "name": "Probabilidad y Estadística I",
-      "calname": "PYE1",
+      "calname": "PyE1",
       "hours": [{
           "day": 1,
           "start": 3,
@@ -333,7 +333,7 @@ var cursos = {
     },
     "Calc": {
       "name": "Cálculo",
-      "calname": "Calc",
+      "calname": "Cálculo",
       "hours": [{
           "day": 4,
           "start": 5,
@@ -355,7 +355,7 @@ var cursos = {
     },
     "ProgII": {
       "name": "Programación II",
-      "calname": "ProgII",
+      "calname": "Prog II",
       "hours": [{
           "day": 3,
           "start": 1,
@@ -390,9 +390,9 @@ var cursos = {
       "ects": 6,
       "aula": 0
     },
-    "PYE1": {
+    "PyE1": {
       "name": "Probabilidad y Estadística I",
-      "calname": "PYE1",
+      "calname": "PyE1",
       "hours": [{
           "day": 1,
           "start": 9,
@@ -426,7 +426,7 @@ var cursos = {
     },
     "Calc": {
       "name": "Cálculo",
-      "calname": "Calc",
+      "calname": "Cálculo",
       "hours": [{
           "day": 1,
           "start": 6,
@@ -448,7 +448,7 @@ var cursos = {
     },
     "ProgII": {
       "name": "Programación II",
-      "calname": "ProgII",
+      "calname": "Prog II",
       "hours": [{
           "day": 3,
           "start": 7,
@@ -502,7 +502,7 @@ var cursos = {
     },
     "AdC": {
       "name": "Arquitectura de Computadores",
-      "calname": "AdC",
+      "calname": "Arqui",
       "hours": [{
           "day": 1,
           "start": 5,
@@ -547,7 +547,7 @@ var cursos = {
     },
     "Concu": {
       "name": "Concurrencia",
-      "calname": "Concu",
+      "calname": "Concurrencia",
       "hours": [{
           "day": 3,
           "start": 2,
@@ -584,7 +584,7 @@ var cursos = {
     "color": "rgba(120, 255, 0, 0.3)",
     "AdC": {
       "name": "Arquitectura de Computadores",
-      "calname": "AdC",
+      "calname": "Arqui",
       "hours": [{
           "day": 1,
           "start": 1,
@@ -607,7 +607,7 @@ var cursos = {
     },
     "Concu": {
       "name": "Concurrencia",
-      "calname": "Concu",
+      "calname": "Concurrencia",
       "hours": [{
           "day": 1,
           "start": 2,
@@ -723,7 +723,7 @@ var cursos = {
     "color": "rgba(60, 255, 0, 0.3)",
     "AdC": {
       "name": "Arquitectura de Computadores",
-      "calname": "AdC",
+      "calname": "Arqui",
       "hours": [{
           "day": 1,
           "start": 7,
@@ -780,7 +780,7 @@ var cursos = {
     },
     "Concu": {
       "name": "Concurrencia",
-      "calname": "Concu",
+      "calname": "Concurrencia",
       "hours": [{
           "day": 2,
           "start": 10,
@@ -839,7 +839,7 @@ var cursos = {
     "color": "rgba(0, 255, 0, 0.3)",
     "SSDist": {
       "name": "Sistemas Distribuidos",
-      "calname": "SSDist",
+      "calname": "SSDD",
       "hours": [{
           "day": 1,
           "start": 1,
@@ -901,7 +901,7 @@ var cursos = {
     },
     "PDLR": {
       "name": "Programación Declarativa: Lógica y Restricciones",
-      "calname": "PDLR",
+      "calname": "Prolog",
       "hours": [
         {
           "day": 2,
@@ -923,7 +923,7 @@ var cursos = {
     "color": "rgba(0, 255, 60, 0.3)",
     "SSDist": {
       "name": "Sistemas Distribuidos",
-      "calname": "SSDist",
+      "calname": "SSDD",
       "hours": [{
           "day": 1,
           "start": 8,
@@ -940,7 +940,7 @@ var cursos = {
     },
     "PDLR": {
       "name": "Programación Declarativa: Lógica y Restricciones",
-      "calname": "PDLR",
+      "calname": "Prolog",
       "hours": [
         {
           "day": 1,
@@ -1007,7 +1007,7 @@ var cursos = {
     "color": "rgba(0, 255, 120, 0.3)",
     "PDDS": {
       "name": "Procesamiento Digital de la Señal",
-      "calname": "PDDS",
+      "calname": "PDS",
       "hours": [{
           "day": 1,
           "start": 6,
@@ -1122,7 +1122,7 @@ var cursos = {
     },
     "EPAC": {
       "name": "English for Professional and Academic Communication ",
-      "calname": "EPAC",
+      "calname": "Inglés",
       "hours": [{
           "duration": 2,
           "start": 8,
@@ -1142,7 +1142,7 @@ var cursos = {
     "color": "rgba(0, 255, 240, 0.3)",
     "TC": {
       "name": "Computabilidad: Fundamentos y Aplicaciones",
-      "calname": "TC",
+      "calname": "Computabilidad",
       "hours": [{
         "duration": 2,
         "start": 9,
@@ -1163,7 +1163,7 @@ var cursos = {
     },
     "AlGe": {
       "name": "Algoritmos Geométricos",
-      "calname": "AlGe",
+      "calname": "Alg. Geo.",
       "hours": [{
         "duration": 2,
         "start": 6,
@@ -1185,7 +1185,7 @@ var cursos = {
     },
     "RPC": {
       "name": "Robótica y Percepción Computacional",
-      "calname": "RPC",
+      "calname": "Robótica",
       "hours": [{
         "duration": 2,
         "start": 10,
@@ -1224,7 +1224,7 @@ var cursos = {
     },
     "G3DIG": {
       "name": "Geometría 3D para informática Gráfica",
-      "calname": "G3DIG",
+      "calname": "Geo 3D",
       "hours": [{
         "duration": 2,
         "start": 9,
