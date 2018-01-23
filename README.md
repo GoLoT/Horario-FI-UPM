@@ -1,5 +1,5 @@
 # Horario-FI-UPM
-https://www.golot.es/horariofi.html
+https://golot.github.io/Horario-FI-UPM/
 
 # Contribuir
 Cualquier error en los horarios, solo tienes que cambiar el json asociado a el que se encontraría en la carpeta: `horarios/[año-1]-[año]/[semestre]/[codClase].json`.
